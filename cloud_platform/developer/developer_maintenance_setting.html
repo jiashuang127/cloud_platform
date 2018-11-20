@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">  
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!--日期插件-->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.css">
+  <script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="../images/developer/icon-man.png" class="user-img">
+                  <span class="username">platform_admin@campus.com</span>
+                  <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-n">
+                  <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                  <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                  <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="../developer/developer_app_detail.html">学生智慧管理</a></li>
+              <li><a href="../developer/developer_maintenance_history.html">维护管理</a></li>
+              <li class="active">新增维护</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <div class="developer-app-review">
+            <div class="d-app-status-top height_over">
+              <div class="fl">
+                <img class="app-d-img" src="../images/app_store/new-app05.png">
+              </div>
+              <div class="d-app-status-name-m fl">
+                <h3>失联预警</h3>
+                <p class="app-detail-dwords"><span>当前版本：</span>3.1.571</p>
+                <p class="app-detail-dwords"><span>发布日期：</span>2016-04-30</p>
+              </div>
+              <div class="fr">
+                <div class="fl mt_20 mr_5">
+                <span class="c_a5aeb9 mr_10">当前运行情况</span>
+                <p><span class="circle-green"></span><span class="fs16 c_05d660 ml_10">运行中</span></p>
+                </div>
+                <img src="../images/developer/icon-maintenance01.png"/>
+              </div>
+            </div>
+            <!--填写信息表单 start-->
+            <div class="infor-form-box infor-form-box-new">
+              <ul class="infor-form-list maintenance-infor-form-list">
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">维护时间</label>
+                  <div class="infor-datetime form-datetime-new fl">
+                    <i class="iconfont icon-icon-calendar"></i>
+                    <input type="text" class="datetime" value="2017-05-22 17:34">
+                  </div>
+                  <span class="to-word fl">至</span>
+                  <div class="infor-datetime form-datetime-new fl">
+                    <i class="iconfont icon-icon-calendar"></i>
+                    <input type="text" class="datetime" value="2017-05-22 17:34">
+                  </div>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">维护地址</label>
+                  <div id="type" class="test">
+                    <span>选择地址</span>
+                    <input type="hidden" class="sim_select_value" id="category" name="category_id" value="">
+                    <ul class="dropdown">
+                      <li data-value="1">系统默认</li>
+                      <li data-value="2">自定义</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <label class="infor-name fl">自定义</label>
+                  <input type="text" class="form-control infor-form-control" placeholder="自定义地址"/>
+                  <span class="col-red fs12 ml_20">自定义地址不能为空</span>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">维护信息</label>
+                  <textarea placeholder="字数不少于20字" class="form-control infor-form-control fl" maxlength="200" rows="5" cols="40"></textarea>
+                  <span class="col-red fs12 ml_22">应用简介不能为空且不少于20字</span>
+                </li>
+                <li>
+                  <label class="infor-name fl"></label>
+                  <a href="###" class="base-btn btn-blue btn-large" data-toggle="modal" data-target="#myModal">保存</a>
+                </li>
+              </ul>
+            </div>
+            <!--填写信息表单 end-->
+          </div>
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+
+
+
+<!--开关，日期插件js-->
+<script type="text/javascript">
+//苹果开关按钮JS
+//   $(document).on("click", ".btn_switch", function (e) {
+//     e.preventDefault();
+//     var $this = $(this), $span = $this.find("span"), text = $span.text()
+//         , $switch_input = $this.find('#warning_rule_warning_status');
+//     if ($this.hasClass('on')) {
+//       $this.removeClass('on');
+//       $("#maintain_set").hide();
+//       $("#open_maintain").hide();
+// //      $switch_input.val("off");
+//     } else {
+//       $this.addClass('on');
+//       $("#maintain_set").show();
+//       $("#open_maintain").show();
+// //      $switch_input.val("on");
+//     }
+//   });
+  //日期控件初始化JS
+  $('.datetime').datetimepicker({
+    language: 'zh-CN',
+    showMeridian: true,
+    startView: 'day',
+    // minView:'day',
+    autoclose: true
+  });
+</script>
+</body>
+</html>
+<!--优化下拉菜单-->
+<script type="text/javascript" src="../js/select_box.js"></script>

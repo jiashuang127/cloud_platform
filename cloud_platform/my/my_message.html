@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的消息</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li class="toggle-role-text">切换至...</li>
+                      <li><a href="###" class="top-edit top-edit-border"><i class="iconfont icon-iconfonticon5 mr_10"></i>用户角色</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="../developer/developer_index.html"class="active">开发者中心</a></li>
+              <li><a href="../doc/doc_API_store.html">数据集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="item">
+              <a href="../developer/developer_index.html"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="toggle active">
+              <a href="../my/my_message.html"><i class="iconfont icon-xiaoxioff iconfont-sidebar"></i>消息中心</a>
+            </li>
+            <li class="item">
+              <a href="../doc/doc_index03.html"><i class="iconfont icon-wendangzhongxin iconfont-sidebar"></i>文档中心</a>
+            </li>
+            <li class="item">
+              <a href="../my/my_infor.html"><i class="iconfont icon-jibenziliao iconfont-sidebar"></i>基本资料</a>
+            </li>
+            <li class="item">
+              <a href="../my/password.html"><i class="iconfont icon-icon_xiugaimima iconfont-sidebar"></i>修改密码</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div id="container" style="min-height: 820px;">
+        <div class="content-body-new">
+          <div class="content-top">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="title">消息中心</span></li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索 start-->
+            <div class="devloper-top-box fr">
+              <div class="developer-search-new fr">
+                <input type="text" placeholder="请输入关键字">
+                <button type="button"><i class="iconfont icon-sousuo"></i></button>
+              </div>
+            </div>
+            <!--搜索 end-->
+          </div>
+          <!--消息中心列表-->
+          <div class="developer-app-review">
+            <ul class="app-detail-nav">
+              <li>
+                <a href="###" class="cur">全部</a>
+              </li>
+              <li>
+                <a href="###"><span class="noread-tips"></span>系统消息</a>
+              </li>
+              <li>
+                <a href="###">平台公告</a>
+              </li>
+              <li>
+                <a href="###">留言回复</a>
+              </li>
+              <div class="fr pr_40">
+                <a href="###" class="fl messages-tab active">按时间</a>
+                <span class="ml_10 fl mr_10 c_2da7fb">|</span>
+                <a href="###" class="fl messages-tab mr_20">按状态</a>
+              </div>
+            </ul>
+            <div class="all-app-review-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th width="30"></th>
+                    <th>消息内容</th>
+                    <th>时间</th>
+                    <th>消息类型</th>
+                    <th width="110">操作</th>
+                    <th width="30"></th>
+                  </tr>
+                </thead>
+                <tbody>    
+                  <tr>
+                    <td></td>
+                    <td><span class="circle-yellow circle-small mr_10"></span>新增自定义API[乱码测试]</td>
+                    <td>2017-04-17</td>
+                    <td>平台公告</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue">标为已读</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr class="c_grey">
+                    <td></td>
+                    <td><span class="circle-grey circle-small mr_10"></span>新增自定义API[人员账户信息人员账户信息（修改）]</td>
+                    <td>2017-04-17</td>
+                    <td>平台公告</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><span class="circle-yellow circle-small mr_10"></span>新增自定义API[乱码测试]</td>
+                    <td>2017-04-17</td>
+                    <td>留言回复</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue" data-toggle="modal" data-target="#myUrlModal">查看留言</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--消息中心列表 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email">pingtaiceshi@xjgreat.com</span><span class="footer-phone">010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+
+
+
+<script type="text/javascript">
+   // $(document).ready(function () {
+   //  var $a_radio = $('.radio')
+   //          $b_radio = $('.replaced');
+   //          $a_radio.click(function () {
+   //              var $this = $(this);
+   //              $('.radio').removeClass('on');
+   //              $this.addClass('on');
+   //              $('.replaced').removeAttr('checked');
+   //              $this.siblings('.replaced').prop('checked', 'true');
+   //          });
+   //          $b_radio.click(function () {
+   //              var $this = $(this);
+   //              $a_radio.removeClass('on');
+   //              $this.siblings('.radio').addClass('on');
+   //              $('.replaced').removeAttr('checked');
+   //              $this.prop('checked', 'true');
+   //          })
+   //  });
+</script>
+<!--模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">查看留言</h4>
+          </div>
+          <div class="modal-body">
+            <div class="administrator-replies">
+              <h6>管理员回复：</h6>
+              <p>入夜，黑幕如泼洒墨水，从东边到西边，渐渐淹过城市，日光刻出的影子，色彩全都逐次被淹没在幽深的黑底，过了零点，黑得更加深樾，小区一路沉没，楼窗闭口不语，倘有几扇敝开的心扉，也都是亮明不说，缄默面向，好像有太多的不明，无法脱口</p>
+            </div>
+            <div class="administrator-replies my-message-b">
+              <h6>我的留言：</h6>
+              <p>入夜，黑幕如泼洒墨水，从东边到西边，渐渐淹过城市，日光刻出的影子，色彩全都逐次被淹没在幽深的黑底，过了零点，黑得更加深樾，小区一路沉没，楼窗闭口不语，倘有几扇敝开的心扉，也都是亮明不说，缄默面向，好像有太多的不明，无法脱口</p>
+            </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+<!--底部end-->
+</body>
+</html>

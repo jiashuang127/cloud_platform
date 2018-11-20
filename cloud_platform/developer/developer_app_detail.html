@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="../my/my_message.html" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li class="toggle-role-text">切换至...</li>
+                      <li><a href="###" class="top-edit top-edit-border"><i class="iconfont icon-iconfonticon5 mr_10"></i>用户角色</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="../developer/developer_index.html" class="active">开发者中心</a></li>
+              <li><a href="../doc/doc_API_store.html">数据集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container">
+        <div class="content-body-new">
+          <div class="content-top">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../developer/developer_index.html">我开发的应用</a></li>
+              <li class="active">学生智慧管理</li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索和创建 start-->
+            <div class="devloper-top-box fr">
+              <a href="###" class="base-btn btn-blue fr">申请上架</a>
+            </div>
+            <!--搜索和创建 end-->
+          </div>
+          <!--应用管理列表-->
+          <div class="da-management-list-box">
+            <ul class="da-management-list">
+              <li>
+                <div class="infor-icon infor-icon-base"></div>
+                <h5>基本信息</h5>
+                <p>对应用的基本信息进行编辑，包括应用简称、LOGO、应用地址、应用简介等，生效后将在应用商店中被更新。</p>
+                <a href="../developer/developer_check_app.html" class="base-btn btn-white">管理</a>
+                <a href="../developer/developer_check_infor.html" class="base-btn btn-white ml_10">查看上架信息</a>
+                <a href="../developer/developer_appKey.html" class="base-btn btn-white ml_10">App Key</a>
+              </li>
+              <li>
+                <div class="infor-icon infor-icon-api"></div>
+                <h5>API管理</h5>
+                <p>应用创建后，开发者可以申请试用平台提供的API。平台提供字段级授权及管理，获得授权后可以在应用中引用。</p>
+                <a href="../developer/developer_appAPI_application.html" class="base-btn btn-white">申请API</a>
+                <!-- <a href="../developer/application_data_structure.html" class="base-btn btn-white ml_5">申请数据结构</a> -->
+                <a href="../developer/developer_appAPI.html" class="base-btn btn-white ml_10">API管理</a>
+                <a href="../developer/developer_appAPI_history.html" class="base-btn btn-white ml_10">申请记录</a>
+              </li>
+              <li>
+                <div class="infor-icon infor-icon-maintenance"></div>
+                <h5>运营维护</h5>
+                <p>应用上架后，开发者可以对其进行维护，用户访问维护中的应用时将被转向预先设置的维护地址，维护结束后应用恢复正常访问。</p>
+                <a href="../developer/developer_maintenance_setting.html" class="base-btn btn-white">维护管理</a>
+                <a href="../developer/developer_version_management.html" class="base-btn btn-white ml_10">版本管理</a>
+              </li>
+              <li>
+                <div class="infor-icon infor-icon-data"></div>
+                <h5>数据开放</h5>
+                <p>应用创建后，开发者可以申请相关数据字典或者申请直连数据库。</p>
+                <a href="../developer/open_data.html" class="base-btn btn-white">申请数据</a>
+                <a href="..//developer/open_data_review.html" class="base-btn btn-white ml_10">申请记录</a>
+              </li>
+              <li>
+                <div class="infor-icon infor-icon-algorithm"></div>
+                <h5>数据计算</h5>
+                <p>平台为用户提供基于平台所添加的数据源j进行数据计算结果的能力。</p>
+                <a href="../developer/developer_application_calculate.html" class="base-btn btn-white">申请计算</a>
+                <a href="../developer/developer_application_calculate_task.html" class="base-btn btn-white ml_10">任务管理</a>
+                <a href="../developer/developer_application_calculate_record.html" class="base-btn btn-white ml_10">申请记录</a>
+              </li>
+              <li>
+                <div class="infor-icon infor-icon-datatable"></div>
+                <h5>文本数据</h5>
+                <p>平台为用户提供基于平台所添加的数据源j进行数据计算结果的能力。</p>
+                <a href="../developer/developer_application_calculate.html" class="base-btn btn-white">申请计算</a>
+                <a href="../developer/developer_application_calculate_task.html" class="base-btn btn-white ml_10">任务管理</a>
+                <a href="../developer/developer_application_calculate_record.html" class="base-btn btn-white ml_10">申请记录</a>
+              </li>
+              <!-- <li>
+                <h5>应用版本</h5>
+                <p>开发者可以查看历史的版本记录详情</p>
+                <a href="../developer/developer_version_management.html" class="base-btn btn-blue">管理</a>
+              </li> -->
+            </ul>
+          </div>
+          <!--应用管理列表 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+</body>
+</html>

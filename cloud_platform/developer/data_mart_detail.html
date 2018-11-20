@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据集市-数据集合详情</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!--滚动条JS-->
+  <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <script src="../js/perfect-scrollbar.jquery.min.js"></script>
+  <script>
+    $(function() {
+        $("[data-toggle='popover']").popover();
+        $('#api_categories').perfectScrollbar();
+        $('#dataTableScroll').perfectScrollbar();
+        $('#dataPreviewScroll').perfectScrollbar();
+      });
+  </script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="../my/my_message.html" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li class="toggle-role-text">切换至...</li>
+                      <li><a href="###" class="top-edit top-edit-border"><i class="iconfont icon-iconfonticon5 mr_10"></i>开发者角色</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="../app_store/app_store_new.html">应用大厅</a></li>
+              <li><a href="../my/my_infor_user.html">用户中心</a></li>
+              <li><a href="../doc/doc_API_store.html" class="active">数据集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="item">
+              <a href="../doc/doc_API_store.html"><i class="iconfont icon-IPguanli iconfont-sidebar"></i>API集市</a>
+            </li>
+            <li class="toggle active">
+              <a href="../developer/data_mart.html"><i class="iconfont icon-shuju iconfont-sidebar"></i>数据集合</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div id="container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../doc/doc_API_store.html">数据集市</a></li>
+              <li><a href="../developer/data_mart.html">数据集合</a></li>
+              <li class="active">详情</li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索 start-->
+            <div class="devloper-top-box fr">
+              <div class="developer-search-new fr">
+                <input type="text" placeholder="表名/表注释">
+                <button type="button"><i class="iconfont icon-sousuo"></i></button>
+              </div>
+            </div>
+            <!--搜索end-->
+          </div>
+          <!--数据集合详情-->
+          <div class="data-mart-detail">
+            <div class="data-mart-detail-top">
+              <img src="../images/developer/data_mart_large.png" />
+              <div class="data-mart-list-right">
+                <p class="data-mart-list-name">学生管理数据集</p>
+                <p>表数量<span class="c_2da7fb ml_5">12</span></p>
+              </div>
+            </div>
+            <div class="data-mart-detail-list">
+              <div class="pall_30 pt_20">
+                <div class="pro-api-detail-box">
+                  <div class="api-classify-datail-left">
+                    <div id="api_categories">
+                      <ul id="myTab" class="nav nav-tab-left">
+                        <li class="active">
+                          <a href="#APIname01" data-toggle="tab">学生基础信息</a>
+                        </li>
+                        <li>
+                          <a href="#APIname02" data-toggle="tab">学生成绩信息</a>
+                        </li>
+                        <li>
+                          <a href="#APIname03" data-toggle="tab">一卡通账户信息</a>
+                        </li>
+                        <li>
+                          <a href="#APIname04" data-toggle="tab">图书借阅信息</a>
+                        </li>
+                        <li>
+                          <a href="#APIname05" data-toggle="tab">学校基础数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname066" data-toggle="tab">教职工管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname07" data-toggle="tab">图书馆数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname08" data-toggle="tab">一卡通数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname09" data-toggle="tab">教学管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname10" data-toggle="tab">科研管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname11" data-toggle="tab">财务管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname12" data-toggle="tab">资产管理数据集)</a>
+                        </li>
+                        <li>
+                          <a href="#APIname13" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname14" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname15" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname16" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname17" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname18" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname19" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname20" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname21" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname22" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                        <li>
+                          <a href="#APIname23" data-toggle="tab">办公管理数据集</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="myTabContent" class="pro-api-tab-content tab-content">
+                    <div class="tab-pane fade in active" id="APIname01">
+                      <div class="campus-app-tab-box-new">
+                        <ul>
+                          <li class="active">
+                            <a href="#preview" data-type="preview" data-toggle="tab">数据预览</a>
+                          </li>
+                          <li>
+                            <a href="#explain" data-type="explain" data-toggle="tab">字段说明</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="preview">
+                          <div class="pro-add-app-table ca-API-application-result">
+                            <div id="dataPreviewScroll" style="position: relative; height: 406px">
+                              <div class="all-app-review-list api-application-list">
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="5"></th>
+                                      <th>SCARDSNR</th>
+                                      <th>OUTID</th>
+                                      <th>CARDTYPE</th>
+                                      <th>RYH</th>
+                                      <th>SCARDSNR</th>
+                                      <th>OUTID</th>
+                                      <th>CARDTYPE</th>
+                                      <th>RYH</th>
+                                      <th>SCARDSNR</th>
+                                      <th>OUTID</th>
+                                      <th>CARDTYPE</th>
+                                      <th>RYH</th>
+                                      <th>SCARDSNR</th>
+                                      <th>OUTID</th>
+                                      <th>CARDTYPE</th>
+                                      <th>RYH</th>
+                                      <th width="5"></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>40922632</td>
+                                      <td>100000</td>
+                                      <td>43425</td>
+                                      <td>108327</td>
+                                      <td>12432</td>
+                                      <td>1800</td>
+                                      <td>475782</td>
+                                      <td>10000</td>
+                                      <td>40922632</td>
+                                      <td>100000</td>
+                                      <td>43425</td>
+                                      <td>108327</td>
+                                      <td>12432</td>
+                                      <td>1800</td>
+                                      <td>475782</td>
+                                      <td>10000</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>40922632</td>
+                                      <td>100000</td>
+                                      <td>43425</td>
+                                      <td>108327</td>
+                                      <td>12432</td>
+                                      <td>1800</td>
+                                      <td>475782</td>
+                                      <td>10000</td>
+                                      <td>40922632</td>
+                                      <td>100000</td>
+                                      <td>43425</td>
+                                      <td>108327</td>
+                                      <td>12432</td>
+                                      <td>1800</td>
+                                      <td>475782</td>
+                                      <td>10000</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>40922632</td>
+                                      <td>100000</td>
+                                      <td>43425</td>
+                                      <td>108327</td>
+                                      <td>12432</td>
+                                      <td>1800</td>
+                                      <td>475782</td>
+                                      <td>10000</td>
+                                      <td>40922632</td>
+                                      <td>100000</td>
+                                      <td>43425</td>
+                                      <td>108327</td>
+                                      <td>12432</td>
+                                      <td>1800</td>
+                                      <td>475782</td>
+                                      <td>10000</td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="explain">
+                          <div class="pro-add-app-table ca-API-application-result">
+                            <div id="dataExplainScroll" style="height: 406px; position: relative;">
+                              <div class="all-app-review-list api-application-list">
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="5"></th>
+                                      <th>字段名</th>
+                                      <th>字段类型</th>
+                                      <th>类型</th>
+                                      <th>其他</th>
+                                      <th width="5"></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>open_api_user_list_model</td>
+                                      <td>varchar(100)</td>
+                                      <td>学号</td>
+                                      <td>string</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>card_account_num</td>
+                                      <td>varchar(100)</td>
+                                      <td>学号</td>
+                                      <td>string</td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--tab 切换end-->
+                    </div>
+                    <div class="tab-pane fade" id="APIname02">
+                      第二个
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <!--数据集合详情end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email">pingtaiceshi@xjgreat.com</span><span class="footer-phone">010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+</body>
+</html>

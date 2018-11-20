@@ -1,0 +1,39 @@
+
+cloud_base.css为公共样式文档，包括头部+底部样式，所有页面都要引用
+
+cloud_login.css为（登录注册+首页）的样式
+
+cloud_developer.css为（开发者中心）的样式
+
+cloud_store.css为（应用商店+API文档）的样式
+
+
+
+bootstrap-switch.css为开关插件代码
+
+prettify.css为代码高亮插件的样式
+
+
+jquery.multiselect2side_2.css为jQuery多选列表框插件
+
+
+daterangepicker.css为选择年月日时间区间空间插件
+
+
+bootstrap-datetimepicker.css为年月日时分秒空间插件
+
+
+分页tr加的class名称 paginate-hover
+
+
+
+
+.iconfont-sidebar{
+    font-size: 20px;
+    float: left;
+    margin-right: 10px;
+    color: #aec2de;
+}
+.iconfont-btn{
+    margin-right: 5px;
+}

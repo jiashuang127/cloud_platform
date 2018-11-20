@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基本资料</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="../my/my_message.html" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li class="toggle-role-text">切换至...</li>
+                      <li><a href="###" class="top-edit top-edit-border"><i class="iconfont icon-iconfonticon5 mr_10"></i>开发者角色</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="../app_store/app_store_new.html">应用大厅</a></li>
+              <li><a href="../my/my_infor_user.html" class="active">用户中心</a></li>
+              <li><a href="###">数据集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="item">
+              <a href="../developer/opan_text_data.html"><i class="iconfont icon-wenbenwendang iconfont-sidebar"></i>文本数据开放</a>
+            </li>
+            <li class="item">
+              <a href="../my/my_message.html"><i class="iconfont icon-xiaoxioff iconfont-sidebar"></i>消息中心</a>
+            </li>
+            <li class="toggle active">
+              <a href="../my/my_infor_user.html"><i class="iconfont icon-jibenziliao iconfont-sidebar"></i>基本资料</a>
+            </li>
+            <li class="item">
+              <a href="../my/password.html"><i class="iconfont icon-icon_xiugaimima iconfont-sidebar"></i>修改密码</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="title">基本资料<span class="col-red fs12 ml_5">带*为必填</span></li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <!--基本资料-->
+          <div class="infor-form-box-new">
+            <ul class="infor-form-list">
+              <li>
+                <label class="infor-name fl">头像</label>
+                <div class="fl head-sculpture-img-box">
+                  <p class="p-edit-tips">如果您还没有设置自己的头像，系统会显示为默认头像</p>
+                  <p class="p-edit-tips">头像标准尺寸：155*155像素</p>
+                  <div class="head-sculpture-img">
+                    <img src="../images/developer/icon-man.png">
+                    <div class="head-portrait-inp">
+                      <span class="base-btn btn-blue">上传头像</span>
+                      <input type="file" class="upload-head-portrait">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- <li>
+                <label class="infor-name">昵称</label>
+                <input type="text" class="form-control infor-form-control border_red" placeholder="请填写昵称">
+                <i class="col-red ml_5">*</i>
+                <span class="col-red fs12 ml_5">请填写昵称</span>
+              </li> -->
+              <li>
+                <label class="infor-name">真实姓名</label>
+                <input type="text" class="form-control infor-form-control" placeholder="请填写真实姓名">
+                <i class="col-red ml_5">*</i>
+              </li>
+              <li>
+                <label class="infor-name fl">性别</label>
+                <div class="sexuality-box app-logo-upload fl">
+                  <div class="form-control-sex form-control-sex-pad">
+                    <label class="radio ">
+                      <i class="pip"></i>
+                    </label>
+                    <input type="radio" name="gender" id="rad2" class="replaced" value="1"><span>男</span>
+                  </div>
+                  <div class="form-control-sex">
+                    <label class="radio on">
+                      <i class="pip"></i>
+                    </label>
+                    <input type="radio" name="gender" id="rad3" class="replaced" value="2"><span>女</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <label class="infor-name fl">账号</label>
+                <input type="text" class="form-control infor-form-control" placeholder="" value="yangxi@xjgreat.com" readonly="">
+              </li>
+              <li>
+                <label class="infor-name fl">手机号</label>
+                <input type="text" class="form-control infor-form-control" placeholder="" value="1507123467">
+              </li>
+              <li>
+                <label class="infor-name fl">邮箱</label>
+                <input type="text" class="form-control infor-form-control" placeholder="" value="jiuixin@xjgreat.com">
+              </li>
+              <li>
+                <label class="infor-name"></label>
+                <a href="###" class="base-btn btn-blue btn-large" data-toggle="modal" data-target="#myModal">保存</a>
+              </li>
+            </ul>
+          </div>
+          <!--基本资料 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+</body>
+</html>
+<script type="text/javascript">
+   $(document).ready(function () {
+    var $a_radio = $('.radio')
+            $b_radio = $('.replaced');
+            $a_radio.click(function () {
+                var $this = $(this);
+                $('.radio').removeClass('on');
+                $this.addClass('on');
+                $('.replaced').removeAttr('checked');
+                $this.siblings('.replaced').prop('checked', 'true');
+            });
+            $b_radio.click(function () {
+                var $this = $(this);
+                $a_radio.removeClass('on');
+                $this.siblings('.radio').addClass('on');
+                $('.replaced').removeAttr('checked');
+                $this.prop('checked', 'true');
+            })
+    });
+</script>

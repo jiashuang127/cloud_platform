@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单</title>
+  <link rel="shortcut icon" href="images/xijia.ico">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="./css/cloud_developer.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <!--表单验证-->
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/messages_zh.js"></script>
+  <!--表单js-->
+  <script>
+  // $.validator.setDefaults({
+  //     submitHandler: function() {
+  //       alert("提交事件!");
+  //     }
+  // });
+  $().ready(function() {
+  // 在键盘按下并释放及提交后验证提交表单
+    $("#signupForm").validate({
+        rules: {
+          appname: "required",
+          password: {
+            required: true,
+            minlength: 5
+          },
+          confirm_password: {
+            required: true,
+            minlength: 5,
+            equalTo: "#password"
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          appdes: {
+            required: true,
+            maxlength: 200
+          }
+        },
+        messages: {
+          appname: "请输入应用名称",
+          password: {
+            required: "请输入密码",
+            minlength: "密码长度不能小于 5 个字母"
+          },
+          confirm_password: {
+            required: "请输入密码",
+            minlength: "密码长度不能小于 5 个字母",
+            equalTo: "两次密码输入不一致"
+          },
+          email: "请输入一个正确的邮箱",
+          appdes:{
+            required: "应用简介不能为空且不得大于200字",
+          }
+        }
+    });
+  });
+  </script>
+
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="./images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="./images/developer/icon-man.png" class="user-img">
+                  <span class="username">platform_admin@campus.com</span>
+                  <span class="arrow-wrapper"><img src="./images/app_store/icon-down.png" class="arrow-img"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-n">
+                  <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                  <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                  <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="./images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="./developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="./developer/developer_app_detail.html">学生智慧管理</a></li>
+              <li class="active">维护管理</li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索和创建 start-->
+            <div class="devloper-top-box fr">
+              <a href="###" class="base-btn btn-blue fr" data-toggle="modal" data-target="#loading_modal">新增维护</a>
+            </div>
+            <!--搜索和创建 end-->
+          </div>
+          <!--填写信息表单 start-->
+          <form id="signupForm" method="get" action="">
+            <div class="infor-form-box infor-form-box-new">
+              <ul class="infor-form-list">
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">应用名称</label>
+                  <input type="text" class="form-control infor-form-control" placeholder="应用名称"  name="appname"></input>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">应用截图</label>
+                  <div class="logo-upload-box fl">
+                    <div class="app-img-upload fl">
+                      <p class="base-btn btn-blue">上传</p>
+                      <input type="file" class="inp-upload-logo">
+                      <span class="creap-app-upload-tips ml_10">至少上传三张，最多五张，250*100像素</span>
+                    </div>
+                  </div> 
+                  <div class="app-uploaded-img-list">
+                    <div class="app-uploaded-img">
+                      <img src="images/developer/img01.jpeg">
+                      <a class="app-uploaded-img-close" href="###"></a>
+                    </div>
+                    <div class="app-uploaded-img">
+                      <img src="images/developer/img01.jpeg">
+                      <a class="app-uploaded-img-close" href="###"></a>
+                    </div>
+                    <div class="app-uploaded-img">
+                      <img src="images/developer/img01.jpeg">
+                      <a class="app-uploaded-img-close" href="###"></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">适用终端</label>
+                  <div class="test dropdown_ul">
+                    <span>选择终端</span>
+                    <input type="hidden" class="sim_select_value" value="" required="">
+                    <ul class="dropdown">
+                        <li>PC端</li>
+                        <li>移动端</li>
+                        <li>PC端+移动端</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">密码</label>
+                  <input type="password" class="form-control infor-form-control" name="password" placeholder="密码"></input>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">确认密码</label>
+                  <input type="password" name="confirm_password" class="form-control infor-form-control" placeholder="确认密码"></input>
+                </li>
+                <li>
+                  <label class="infor-name fl">邮箱</label>
+                  <input name="email" type="email" class="form-control infor-form-control" placeholder="邮箱"></input>
+                </li>
+                <li>
+                  <i class="col-red infor-form-red">*</i>
+                  <label class="infor-name fl">应用简介</label>
+                  <div class="wordCount fl" id="wordCount">
+                    <textarea placeholder="字数限200字以内" class="form-control infor-form-control fl" maxlength="200" rows="5" cols="40" name="appdes" required=""></textarea>
+                    <span class="wordwrap"><var class="word">200</var>/200</span>
+                  </div>
+                </li>
+                <li>
+                  <label class="infor-name fl"></label>
+                  <button type="submit" class="base-btn btn-blue btn-large submit">保存</button>
+                </li>
+              </ul>
+            </div>
+          </form>
+          <!--填写信息表单 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="./images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+<!--优化下拉菜单-->
+<script type="text/javascript" src="js/select_box.js"></script>

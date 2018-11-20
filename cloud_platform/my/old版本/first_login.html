@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>初始登录修改密码</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_login.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper bg_f5f5f5">
+<!--头部导航 开始-->
+  <div class="cloud-header">
+    <div class="head-top w_1200">
+      <div class="fl">
+        <span>嗨，欢迎来到希嘉！</span>
+      </div>
+    </div>
+  </div>
+  <div class="head-logo ">
+    <div class="w_1200">
+      <div class="logo-left fl">
+        <img src="../images/logo.png"/>
+      </div>
+      <div class="nav-right fr">
+      </div>
+    </div>
+  </div>
+<!--头部导航 end-->
+<!--中间部分 start-->
+  <div class="app-store-content first-login-content">
+    <div class="registered-page-title">
+      <h6>
+      <span>修改密码</span><b class="col-red fs12 ml_5">初次登陆，请修改您的初始密码</b>
+      <p class="fr">我已登录，现在就<a href="###">退出</a></p>
+      </h6>
+    </div>
+    <!--修改密码-->
+    <div class="infor-form-box">
+      <form action="" id="pwd-form">
+      <ul class="infor-form-list pwd-infor-form-list">
+        <li class="form_group">
+          <label class="control_label">登录账号</label>
+          <div class="control_element">
+            <p class="email">admin_campus@xjgreat.com</p>
+          </div>
+        </li>
+        <li class="form_group">
+          <label class="control_label">新密码</label>
+          <div class="control_element">
+            <input type="password" id="pass" class="form_control">
+            <div class="error_prompt"><span class="glyphicon glyphicon-remove-circle"></span> <p class="text_tip"></p></div>
+          </div>
+        </li>
+        <li class="form_group">
+          <label class="control_label" style="margin-top: 6px;">密码强度</label>
+          <div class="control_element">
+            <div id="passStrength" class="lvwrap">
+              <ul>
+                <li>低</li>
+                <li>中</li>
+                <li>强</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="form_group">
+          <label class="control_label">确认新密码</label>
+          <div class="control_element">
+            <input type="password" id="pass2" class="form_control">
+            <div class="error_prompt"><span class="glyphicon glyphicon-remove-circle"></span> <p class="text_tip"></p></div>
+          </div>
+        </li>
+        <li class="form_group">
+          <label class="control_label">验证码</label>
+          <div class="control_element">
+            <input type="text" id="code" class="form_control" style="width: 64%">
+            <span class="form_control_r"><button type="button" id="getCode" class="btn btn-blue getcode-btn">获取邮箱验证码</button></span>
+            
+            <div class="error_prompt"><span class="glyphicon glyphicon-remove-circle"></span> <p class="text_tip"></p></div>
+          </div>
+        </li>
+        <li class="form_group">
+          <label class="control_label"></label>
+          <div class="control_element">
+            <button type="button" id="sub-btn" class="btn btn-blue">保存修改</button>
+          </div>
+        </li>
+      </ul>
+      </form>
+    </div>
+    <!--修改密码 end-->
+  </div>
+<!--中间部分 end-->
+
+<script type="text/javascript">
+$('#getCode').on('click',function(){
+  var $this = $(this);
+  settime($this)
+})
+
+var countdown=5;
+function settime(btn) { 
+  if (countdown == 0) { 
+    btn.removeAttr('disabled');  
+    btn.addClass('btn-blue');  
+    btn.text('获取邮箱验证码');
+    countdown = 5;
+    return;
+  } else { 
+    btn.prop('disabled', true);
+    btn.removeClass('btn-blue');
+    btn.text(countdown+'秒后重新发送')
+    countdown--; 
+  }
+  setTimeout(function() { 
+    settime(btn) 
+  },1000) 
+}
+
+function PasswordStrength(passwordID,strengthID){
+    var _this = this;
+    $('#'+passwordID).keyup(function(){
+      _this.checkStrength($(this).val(),strengthID);
+    })
+};
+PasswordStrength.prototype.checkStrength = function (val,strengthID){
+    var $li = $('#'+strengthID).find('li');
+    var lv = 0; 
+    //if(val.match(/[^\u0000-\u00FF]/g)){ return}
+    if(val.match(/[a-z]/g)){lv++;}
+    if(val.match(/[0-9]/g)){lv++;}
+    if(val.match(/(.[^a-z0-9])/g)){lv++;}
+    if(val.length < 6){lv=0;}
+    if(lv > 3){lv=3;}
+    switch(lv)
+    {
+    case 1:
+      $li.removeClass();
+      $li.eq(lv-1).addClass('lv1');
+      break;
+    case 2:
+      $li.removeClass();
+      $li.eq(lv-1).addClass('lv2')
+      break;
+    case 3:
+      $li.removeClass();
+      $li.eq(lv-1).addClass('lv3')
+      break;
+    default:
+      $li.removeClass();
+    }
+};
+new PasswordStrength('pass','passStrength');
+$('body').on('click','#sub-btn',function(){
+  var id_arr = ['email','code','pass','pass2'];
+  var state = false;
+  $('.error_prompt').hide();
+  for(var i=0; i<id_arr.length; i++){
+    var $input = $('#'+id_arr[i])
+    ,$parent = $input.parent()
+    ,$tip = $parent.find('.text_tip')
+    ,$tip_wrap = $tip.parent();
+    if($input.val() == ''){
+      $tip.text('该字段不能为空');
+      $tip_wrap.show();
+      state = false;
+    }else{
+      if(id_arr[i] == 'pass'){
+        if(($('#'+id_arr[i]).val().length < 6)){
+          $tip.text('密码不能小于6位字符');
+          $tip_wrap.show();
+          state = false;
+        }
+        else if($('#'+id_arr[i]).val() !== $('#pass2').val()){
+          $tip.text('输入的密码不一致');
+          $tip_wrap.show();
+          state = false;
+        }else{
+          state = true;
+        }
+      }else{
+        state = true;
+      }
+    }
+    if(!state){
+      return false
+    }
+  }
+  $('#myModal').modal();
+})
+
+</script>
+<!--底部end-->
+</body>
+</html>

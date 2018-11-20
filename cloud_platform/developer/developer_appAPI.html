@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.sparkline.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="../developer/developer_app_detail.html">学生智慧管理</a></li>
+              <li class="active">API管理</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <div class="developer-app-review">
+            <div class="filter-conditions-box">
+              <div class="test short-test dropdown_ul">
+                <span>API分类</span>
+                <input type="hidden" class="sim_select_value" value="">
+                <ul class="dropdown">
+                    <li>全部</li>
+                    <li>测试发布分类</li>
+                    <li>学生管理分类</li>
+                </ul>
+              </div>  
+              <div class="test short-test dropdown_ul">
+                <span>API名称</span>
+                <input type="hidden" class="sim_select_value"value="">
+                <ul class="dropdown">
+                    <li>全部</li>
+                    <li>API名称01</li>
+                    <li>API名称02</li>
+                </ul>
+              </div>  
+            </div>
+            <div class="all-app-review-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th width="30"></th>
+                    <th width="100px">API分类</th>
+                    <th width="130px">API名称</th>
+                    <th>首次授权日期</th>
+                    <th>今日调用</th>
+                    <th>趋势</th>
+                    <th>申请人</th>
+                    <th>状态</th>
+                    <th>授权字段</th>
+                    <th>URL</th>
+                    <th width="30"></th>
+                  </tr>
+                </thead>
+                <tbody>    
+                  <tr>
+                    <td></td>
+                    <td>网站日志</td>
+                    <td> <a href="../developer/developer_appAPI_application_API_des.html">网站日志列表查询</a></td>
+                    <td>2017-03-31</td>
+                    <td>0次</td>
+                    <td><span class="useage-trend">0, 52, 16, 81, 577, 0, 30, 0, 80, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0</span></td>
+                    <td>刘娜</td>
+                    <td><span class="circle-green mr_10"></span>正常使用</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-green" data-toggle="modal" data-target="#myModal"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                    </td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-yellow" data-toggle="modal" data-target="#myUrlModal"><i class="iconfont icon-fenxianglianjie iconfont-btn" ></i>URL信息</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+<!-- 授权字段模态框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont icon-guanbi"></i></button>
+            <h4 class="modal-title" id="myModalLabel">网站日志列表查询</h4>
+          </div>
+          <div class="modal-body">
+            <p class="mb_10">已授权字段</p>
+            <table class="list-line-table mb_10">
+              <thead>
+                <tr>
+                  <th>参数名</th>
+                  <th>别名</th>
+                  <th>类型</th>
+                  <th>描述</th>  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>request_ip</td>
+                  <td></td>
+                  <td>string</td>
+                  <td>授权名称</td>  
+                </tr>   
+                <tr>
+                  <td>referer_url</td>
+                  <td></td>
+                  <td>string</td>
+                  <td>授权地址</td>  
+                </tr>   
+                <tr>
+                  <td>request_method</td>
+                  <td></td>
+                  <td>string</td>
+                  <td></td>  
+                </tr>   
+              </tbody>
+            </table>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- 授权字段模态框 end -->
+<!-- URL模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont icon-guanbi"></i></button>
+            <h4 class="modal-title" id="myModalLabel">网站日志列表查询</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-horizontal">
+		          <div class="form-group mt_15">
+		            <label class="col-sm-1 key-name url-name">URL</label>
+		            <div class="col-sm-11">
+		              <input type="text" class="form-control infor-form-control key-input" value="2017040162445508">
+		              <button type="button" class="copy-btn">复制</button>
+		            </div>
+		          </div>
+		        </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- URL模态框 end -->
+</body>
+</html>
+<!--趋势图js-->
+<script type="text/javascript">
+  $('.useage-trend').sparkline('html', {
+            width: 100,
+            height: 30,
+            spotColor: false,
+            minSpotColor: false,
+            maxSpotColor: false
+        });
+</script>
+<!--优化下拉菜单-->
+<script type="text/javascript" src="../js/select_box.js"></script>

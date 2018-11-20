@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.sparkline.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="">
+                <a href="../developer/developer_index.html" class="">我开发的应用</a>
+              </li>
+              <li class="">
+                <a href="../developer/developer_app_detail.html" class="">学生智慧管理</a>
+              </li>
+              <li>
+                <a href="../developer/developer_appAPI_application.html">申请API</a>
+              </li>
+              <li class="active">API测试工具</li>
+            </ol>
+            <!--面包线 end-->
+            <div class="filter-conditions-box filter-conditions-top mt_10">
+              <div class="test short-test dropdown_ul">
+                <span>API分类</span>
+                <input type="hidden" class="sim_select_value" value="">
+                <ul class="dropdown">
+                    <li>全部</li>
+                    <li>测试发布分类</li>
+                    <li>学生管理分类</li>
+                </ul>
+              </div>  
+              <div class="test short-test dropdown_ul">
+                <span>API名称</span>
+                <input type="hidden" class="sim_select_value" value="">
+                <ul class="dropdown">
+                    <li>全部</li>
+                    <li>API名称01</li>
+                    <li>API名称02</li>
+                </ul>
+              </div> 
+              <div class="fr lh_32">
+                <a href="###" data-toggle="modal" data-target="#myUrlModal">查看参数约定</a><span class="c_618ac2 plr_5">|</span>
+                <a href="###">查看调用示例</a><span class="c_618ac2 plr_5">|</span>
+                <a href="###">查看完整API信息</a>
+              </div> 
+            </div>
+          </div>
+          <!--appAPI测试工具 start-->
+          <div class="all-app-review-list api-test-table-list">
+            <table>
+              <thead>
+                <tr>
+                  <th width="30"></th>
+                  <th>API参数key</th>
+                  <th>查询规则</th>
+                  <th>value</th>
+                  <th>排序规则</th>
+                  <th>操作</th>
+                  <th width="30"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="" style="display: none">
+                  <td></td>
+                  <td class="line_left">
+                    <input type="text" class="param_key form-control infor-form-control w_180" placeholder="请输入参数名"></input>
+                  </td>
+                  <td>
+                    <div id="ruleone" class="test short-more-test dropdown_ul">
+                      <span>选择规则</span>
+                      <input type="hidden" value="">
+                      <ul class="dropdown">
+                          <li>></li>
+                          <li><</li>
+                          <li>=</li>
+                          <li>like</li>
+                      </ul>
+                    </div>  
+                  </td>
+                  <td class="line_right">
+                    <input type="text" class="param_key form-control infor-form-control w_180" placeholder="请输入参数值"></input>
+                  </td>
+                  <td>
+                    <div id="ruletwo" class="test short-more-test dropdown_ul">
+                      <span>选择规则</span>
+                      <input type="hidden" value="">
+                      <ul class="dropdown">
+                          <li>不排序</li>
+                          <li>正序</li>
+                          <li>倒序</li>
+                      </ul>
+                    </div>  
+                  </td>
+                  <td>
+                    <a href="###" data-confirm="确认删除吗？" class="table-iconfonts-btn iconfonts-btn-red"><i class="iconfont icon-shanchu iconfont-btn"></i>删除</a>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="5" class="t-center bb_e9eff5">
+                    <a href="###" id="add_params"><i class="iconfont icon-icon-- mr_5"></i>点击添加参数</a>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="submit" class="base-btn btn-blue btn-large mt_20 ml_30">测试API</button>
+          </div>
+          <div class="da-test-return">
+            <div class="da-test-return-l">
+              <p>请求参数</p>
+              <textarea placeholder="请求参数内容" class="form-control infor-form-control fl" rows="5"></textarea>
+            </div>
+            <div class="da-test-return-l">
+              <p class="mt_20">返回请求</p>
+              <textarea placeholder="返回请求内容" class="form-control infor-form-control fl" rows="8"></textarea>
+            </div>
+            <button type="submit" class="base-btn btn-blue btn-large mt_20">转换json格式</button>
+          </div>
+          <!--appAPI测试工具 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+<!--模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont icon-guanbi"></i></button>
+            <h4 class="modal-title" id="myModalLabel">参数示例</h4>
+          </div>
+          <div class="modal-body">
+            <div class="api-test-params-modal">
+              <h6 class="title">1: in条件约束</h6>
+              <p class="lh_24 c_a5aeb9 mt_15">当条件选择in关键字时，可以输入枚举值或范围, 输入枚举值需用英文逗号分隔, 如24,26,28; 范围用英文横线分隔, 如24-26.</p>
+              <p class="lh_24 c_747486 mb_15">枚举值输入非数字类型时需要用英文单引号引起来, 如'北京','武汉',或者'a','b','c'</p>
+              <h6  class="title">2: 模糊查询约束</h6>
+              <p class="lh_24 c_a5aeb9 mt_15">根据输入的字段名称自动检测该字段是否支持模糊查询, 如支持可以在条件中选择like进行模糊查询。<span class="c_747486">模糊查询与SQL一致, 使用%作为通配符, </span>如abc%为模糊查询以abc开头的结果, %abc为模糊查询以abc结尾的结果, %abc%为模糊查询包含abc的结果</p>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+</body>
+</html>
+<!--优化下拉菜单-->
+<script type="text/javascript"> 
+// function _addLoadEvent(func)
+// {
+//     var oldonload=window.onload;
+//     if(typeof window.onload != 'function')
+//     {
+//         window.onload=func;
+//     }
+//     else
+//     {
+//         window.onload=function()
+//         {
+//             oldonload();
+//             func();
+//         }
+//     }
+// };
+</script> 
+<script type="text/javascript" src="../js/select_box.js"></script>
+<script type="text/javascript">
+  // 添加参数按钮点击事件
+    $(document).on("click", "#add_params", function () {
+        var html =
+            "<tr>" +
+            "<td></td>" +
+            "<td class='line_left'>" +
+            "        <input type='text' class='param_key form-control infor-form-control w_180' placeholder='请输入参数名'>" +
+            "    </td>" +
+            "    <td>" +
+            "        <div class='test short-more-test dropdown_ul'>" +
+            "            <span>选择规则</span>" +
+            "            <input type='hidden' class='sim_select_value' name='condition[]' value='eq'>" +
+            "            <ul class='dropdown'>" +
+            "                <li data-value='eq'>=</li>" +
+            "                <li data-value='gt'>></li>" +
+            "                <li data-value='lt'><</li>" +
+            "                <li data-value='in'>in</li>" +
+            "                <li data-value='like'>like</li>" +
+            "            </ul>" +
+            "        </div>" +
+            "    </td>" +
+            "    <td class='line_right'>" +
+            "        <input type='text' class='param_value form-control infor-form-control w_180'" +
+            "               placeholder='请输入参数值' name='request_params[]'>" +
+            "    </td>" +
+            "    <td>" +
+            "        <div class='test short-more-test dropdown_ul'>" +
+            "            <span>选择排序</span>" +
+            "            <input type='hidden' class='sim_select_value' name='order[]' value=''>" +
+            "            <ul class='dropdown'>" +
+            "                <li data-value=''>不排序</li>" +
+            "                <li data-value='asc'>正序</li>" +
+            "                <li data-value='desc'>倒序</li>" +
+            "            </ul>" +
+            "        </div>" +
+            "    </td>" +
+            "    <td>" +
+            "        <a href= 'javascript:void(0);' class='table-iconfonts-btn iconfonts-btn-red delete_param'><i" +
+            "                class='iconfont icon-shanchu iconfont-btn'></i>删除</a>" +
+            "    </td>" +
+            "    <td></td>" +
+            "</tr>";
+
+        $(this).parents('tr').before(html);
+        initDropdown();
+    });
+</script>

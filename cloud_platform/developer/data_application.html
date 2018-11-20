@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>申请数据</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!--jQuery多选列表框插件-->
+  <link rel="stylesheet" type="text/css" href="../css/jquery.multiselect2side_2.css">
+  <script type="text/javascript" src="../js/jquery.multiselect2side.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 750px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="../developer/opan_text_data.html">文本数据开放</a></li>
+              <li class="active">申请数据</li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索和创建 start-->
+            <div class="devloper-top-box fr">
+              <div class="developer-search-new fr">
+                <input type="text" placeholder="API名称">
+                <button type="button"><i class="iconfont icon-sousuo"></i></button>
+              </div>
+            </div>
+            <!--搜索和创建 end-->
+          </div>
+          <!--切换标签页-->
+          <div class="pall_30">
+            <h3 class="du-changes-infor-title mb_10">数据分类<span class="content-title">数据表</span></h3>
+            <div class="pro-api-detail-box">
+              <div class="api-classify-datail-left">
+                <div id="type" class="test short-test">
+                  <span>选择分类</span>
+                  <ul class="dropdown">
+                      <li>全部分类</li>
+                      <li>自定义API</li>
+                      <li>标准API</li>
+                  </ul>
+                </div>
+                <div id="api_categories">
+                  <ul id="myTab" class="nav nav-tab-left">
+                    <li class="active">
+                      <a href="#APIname01" data-toggle="tab">学生成绩数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname02" data-toggle="tab">学生刷卡信息数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname03" data-toggle="tab">学生成绩信息数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname04" data-toggle="tab">图书借阅信息</a>
+                    </li>
+                    <li>
+                      <a href="#APIname05" data-toggle="tab">学校基础数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname066" data-toggle="tab">教职工管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname07" data-toggle="tab">图书馆数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname08" data-toggle="tab">一卡通数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname09" data-toggle="tab">教学管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname10" data-toggle="tab">科研管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname11" data-toggle="tab">财务管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname12" data-toggle="tab">资产管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname13" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname14" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname15" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname16" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname17" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname18" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname19" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname20" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname21" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname22" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                    <li>
+                      <a href="#APIname23" data-toggle="tab">办公管理数据集</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="myTabContent" class="pro-api-tab-content tab-content">
+                <div class="tab-pane fade in active" id="APIname01">
+                  <div class="all-app-review-list api-application-list">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th width="5"></th>
+                          <th>数据表</th>
+                          <th width="260">字段信息</th>
+                          <th>状态</th>
+                          <th width="50">操作</th>
+                          <th width="5"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>
+                            <a href="../developer/developer_appAPI_application_API_des.html" target="_blank">学生基础信息精确查询</a>
+                          </td>
+                          <td>姓名  年龄  性别  身份证号  生日  出生日期  家庭住址  工作单位  电话号码  联系方式 </td>
+                          <td><span class="circle-grey mr_10"></span>未授权</td>
+                          <td>
+                            <a class="c_618ac2 mr_5" href="###" data-toggle="modal" data-target="#myModal">申请</a>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>
+                            <a href="../developer/developer_appAPI_application_API_des.html" target="_blank">人文社科成绩表</a>
+                          </td>
+                          <td>/open_api/customization/test2gettoken/list</td>
+                          <td><span class="circle-red mr_10"></span>审批拒绝</td>
+                          <td>
+                            <a class="c_618ac2 mr_5" href="###" data-toggle="modal" data-target="#myModal">申请</a>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>
+                            <a href="../developer/developer_appAPI_application_API_des.html" target="_blank">云数据库rds</a>
+                          </td>
+                          <td>/open_api/customization/tgxjgjzgjbxx/list</td>
+                          <td><span class="circle-green mr_10"></span>授权</td>
+                          <td>
+                            <a class="c_618ac2 mr_5" href="###" data-toggle="modal" data-target="#myModal">申请</a>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr class="c_grey">
+                          <td></td>
+                          <td>基础信息精确查询</td>
+                          <td>/open_api/student/infos/show</td>
+                          <td><span class="circle-grey mr_10"></span>未授权</td>
+                          <td>无数据</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="APIname02">
+                  第二个
+                </div>
+              </div>
+            </div>  
+          </div>
+          <!--切换标签页end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+
+
+<!-- 申请模态框（Modal） -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 720px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont icon-guanbi"></i></button>
+            <h4 class="modal-title" id="myModalLabel">申请详情</h4>
+          </div>
+          <div class="modal-body d-appAPI-modal-body">
+            <p class="mb_10 form-static">人文社科成绩表</p>
+            <!--select选择-->
+            <div class="d-pop-up">
+               <select name="searchable[]" id='searchable' multiple='multiple' >
+                <option value="1">超级管理员</option>
+                <option value="2">普通管理员</option>
+                <option value="3">信息发布员</option>
+                <option value="4">财务管理员</option>
+                <option value="5">产品管理员</option>
+                <option value="6">学生姓名</option>
+                <option value="7">班级代码</option>
+                <option value="8">班级名称</option>
+                <option value="9">年级</option>
+                <option value="10">专业代码</option>
+                <option value="11">专业名称</option>
+                <option value="12">院系代码</option>
+                <option value="13">院系名称</option>
+                <option value="14">身份证号码</option>
+                <option value="1911">姓名拼写</option>
+                <option value="1912">性别代码</option>
+                <option value="1913">民族代码</option>
+                <option value="1914">生日日期</option>
+                <option value="1915">邮件</option>
+                <option value="1916">入学年级</option>
+                <option value="1917">当前年级</option>
+                <option value="1918">当前专业代码</option>
+                <option value="1919">学生政治级别</option>
+                <option value="1920">籍贯</option>
+                <option value="1921">学生照片</option>
+                <option value="1922">是否重点学生</option>
+                <option value="1923">学生类型（本/硕/博）</option>
+                <option value="1924">生源地区代码</option>
+                <option value="1925">生源所在地</option>
+                <option value="1926">考生号</option>
+               </select>
+            </div>
+            <div class="d-pop-up"><p id="stat"></p></div>
+            <!--select选择 end-->
+            <p class="mb_10 mt_20 c_747486">申请说明</p>
+            <textarea class="form-control infor-form-control d-appAPI-textarea" name="text" value="" rows="4" maxlength="200" placeholder="请填写内容..."></textarea>
+            <p class="c_2da7fb mt_20 line_height20 mb_10 ">您共选择了人文社科成绩表下4个字段</p>
+          </div>
+          <div class="modal-footer t-center">
+            <button type="button" class="base-btn btn-blue btn-large">提交申请</button>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- 模态框（Modal） -->
+
+<script type="text/javascript">
+     $().ready(function() {
+          $('#searchable').multiselect2side({
+          search: "待选区　　搜索：" ,
+          selectedPosition: 'right',  
+          moveOptions: false,  
+          labelsx: '待选区',  
+          labeldx: '已选区'            
+          });       
+     });
+</script>
+<!--优化下拉菜单-->
+<script type="text/javascript">
+    window.onload = function() {
+        function DropDown(el) {
+            this.dd = el;
+            this.span = this.dd.children('span');
+            this.li = this.dd.find('ul.dropdown li');
+            this.val = '';
+        }
+        DropDown.prototype.initEvents = function() {
+            var obj = this;
+            obj.dd.on('click', function(event) {
+                $(this).toggleClass('active').siblings().removeClass('active');
+                event.stopPropagation();
+            });
+            obj.li.on('click', function() {
+                var opt = $(this);
+                obj.val = opt.html();
+                if(obj.span.html() == obj.val) return;
+                obj.span.html(obj.val);
+                $(document).click(function() {
+                    $('.test').removeClass('active');
+                });
+            })
+        }
+        var test1 = new DropDown($('#type'));
+        test1.initEvents();
+    }
+</script>
+<!--滚动条JS-->
+<link href="../css/perfect-scrollbar.css" rel="stylesheet">
+<script src="../js/perfect-scrollbar.js"></script>
+<script>
+  $(function() {
+        var ps = new PerfectScrollbar('#api_categories');
+        // var ps = new PerfectScrollbar('#searchablems-left');
+        // var ps = new PerfectScrollbar('#searchablems-right');
+    });
+</script>
+</body>
+</html>

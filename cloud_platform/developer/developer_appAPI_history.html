@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!--日期选择区间空间-->
+  <link href="../css/daterangepicker.css" rel="stylesheet" type="text/css" />
+  <script src="../js/moment.js" type="text/javascript"></script>
+  <script src="../js/daterangepicker.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="../images/developer/icon-man.png" class="user-img">
+                  <span class="username">platform_admin@campus.com</span>
+                  <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-n">
+                  <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                  <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                  <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="../developer/developer_app_detail.html">学生智慧管理</a></li>
+              <li class="active">申请记录</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <div class="developer-app-review">
+            <div class="filter-conditions-box">
+              <div id="type" class="test short-test">
+                <span>API分类</span>
+                <input type="hidden" class="sim_select_value" id="category" name="category_id" value="">
+                <ul class="dropdown">
+                    <li>全部</li>
+                    <li>测试发布分类</li>
+                    <li>学生管理分类</li>
+                </ul>
+              </div>  
+              <div id="terminal" class="test short-test">
+                <span>API名称</span>
+                <input type="hidden" class="sim_select_value" id="category" name="category_id" value="">
+                <ul class="dropdown">
+                    <li>全部</li>
+                    <li>API名称01</li>
+                    <li>API名称02</li>
+                </ul>
+              </div>  
+              <div class="form-datetime-new fl">
+                <i class="iconfont icon-icon-calendar"></i>
+                <input type="text" id="d-config-picker" class="form-control infor-form-control form-control-date" placeholder="请选择时间区间">
+              </div>
+              <button type="submit" class="base-btn btn-blue btn-search ml_10"><i class="iconfont icon-sousuo"></i>搜索</button>
+            </div>
+            <div class="all-app-review-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th width="30"></th>
+                    <th>API分类</th>
+                    <th>API名称</th>
+                    <th>申请日期</th>
+                    <th>申请状态</th>
+                    <th width="180">操作</th>
+                    <th width="30"></th>
+                  </tr>
+                </thead>
+                <tbody>    
+                  <tr>
+                    <td></td>
+                    <td>教学管理数据集</td>
+                    <td>研究生专业信息</td>
+                    <td>2017-03-31</td>
+                    <td><span class="circle-green mr_10"></span>已通过</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue" data-toggle="modal" data-target="#myUrlModal"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-green" data-toggle="modal" data-target="#questionModal"><i class="iconfont icon-tijiao iconfont-btn"></i>问题上报</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>教学管理数据集</td>
+                    <td>研究生专业信息</td>
+                    <td>2017-03-31</td>
+                    <td><span class="circle-blue mr_10"></span>待审核</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue" data-toggle="modal" data-target="#myUrlModal"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>教学管理数据集</td>
+                    <td>研究生专业信息</td>
+                    <td>2017-03-31</td>
+                    <td><span class="circle-red mr_10"></span>未通过</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue" data-toggle="modal" data-target="#myUrlModal"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>教学管理数据集</td>
+                    <td>研究生专业信息</td>
+                    <td>2017-03-31</td>
+                    <td><span class="circle-grey mr_10"></span>已关闭</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue" data-toggle="modal" data-target="#myUrlModal"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+<!--查看模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont icon-guanbi"></i></button>
+            <h4 class="modal-title" id="myModalLabel">获取链接</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-horizontal">
+              <p class="get-link-tips mb_10">＊您的申请试用期限已到，如需使用请再次申请</p>
+              <div class="get-link-box">
+                <p><label>development:</label>ghjguters</p>
+                <p><label>adapter:</label>msq12</p>
+                <p><label>encoding:</label>utf8</p>
+                <p><label>development:</label>ghjguters</p>
+                <p><label>pool:</label>5</p>
+                <p><label>development:</label>ghjguters</p>
+                <p><label>password:</label>1246563</p>
+                <p><label>host:</label>localhost</p>
+              </div>
+        </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+<!--问题上报模态框 -->
+<div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">问题上报</h4>
+        </div>
+        <div class="modal-body leave-messages-body">
+          <textarea class="leave-messages" rows="3" placeholder="请输入问题说明"></textarea>
+        </div>
+        <div class="modal-footer leave-messages-footer">
+          <button type="submit" class="base-btn btn-large btn-blue">确定</button>
+        </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+</body>
+</html>
+<!--优化下拉菜单-->
+<script type="text/javascript" src="../js/select_box.js"></script>
+<!--日期选择插件js-->
+<script type="text/javascript">
+      $(document).ready(function() {
+        updateConfig();
+        function updateConfig() {
+          var options = {};
+            options.locale = {
+              "format": 'YYYY-MM-DD',
+              "separator": " - ",
+              "applyLabel": "确定",
+              "cancelLabel": "取消",
+              "fromLabel": "起始时间",
+              "toLabel": "结束时间'",
+              "customRangeLabel": "自定义",
+              "weekLabel": "W",
+              "daysOfWeek": ["日", "一", "二", "三", "四", "五", "六"],
+              "monthNames": ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+              "firstDay": 1
+            };
+            options.initTime = false
+          $('#d-config-picker').daterangepicker(options, function(start, end, label) { console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')'); }).on('change', function(){
+
+          }); 
+          // $('#d-config-picker').daterangepicker({autoUpdateInput:false});
+        }
+      });
+</script>

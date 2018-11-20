@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="">
+                <a href="../developer/developer_index.html" class="">我开发的应用</a>
+              </li>
+              <li class="">
+                <a href="../developer/developer_app_detail.html" class="">学生智慧管理</a>
+              </li>
+              <li class="active">变更信息</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <!--填写信息表单 start-->
+          <div class="infor-form-box infor-form-box-new">
+            <ul class="infor-form-list">
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">应用名称</label>
+                <input type="text" class="form-control infor-form-control" value="学生智慧管理" readonly=""></input>
+              </li>
+              <li>
+                <label class="infor-name fl">应用分类</label>
+                <div id="type" class="test type-disabled">
+                  <span>选择分类</span>
+                  <ul class="dropdown">
+                      <li>应用分类一</li>
+                      <li>应用分类二</li>
+                      <li>应用分类三</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <label class="infor-name fl">适用终端</label>    
+                <div id="terminal" class="test">
+                  <span>选择终端</span>
+                  <ul class="dropdown">
+                      <li>PC端</li>
+                      <li>移动端</li>
+                      <li>PC端+移动端</li>
+                  </ul>
+                </div>           
+              </li>
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">应用logo</label>
+                <div class="logo-upload-box fl">
+                  <div class="fl logo-upload-logo-img"><img id="img0" src="../images/developer/icon-tx-bg.png" height="65" width="65"></div>
+                  <div class="app-logo-upload fl">
+                    <p class="base-btn btn-blue btn-blue-upload">上传</p>
+                    <input type="file" class="inp-upload-logo" id="file0" name="image_url" multiple="multiple">
+                    <a href="###" class="default-logo" data-toggle="modal" data-target="#myModal">选择系统默认LOGO</a>
+                  </div>
+                  <p class="creap-app-upload-tips fl">请上传应用logo图片，100*100像素，仅支持PNG、JPG格式，大小不超过100KB
+                  </p>
+                </div>
+                <span class="col-red fs12 ml_5" id="file0_tips"></span>
+              </li>
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">应用地址</label>
+                <input type="text" class="form-control infor-form-control" placeholder="应用地址"/>
+                <span class="col-red fs12 ml_20">应用地址不能为空</span>
+              </li>
+              <li>
+                <label class="infor-name fl">管理地址</label>
+                <input type="text" class="form-control infor-form-control" placeholder="管理端地址" readonly="" />
+              </li>
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">应用简介</label>
+                <div class="wordCount fl" id="wordCount">
+                  <textarea placeholder="字数限200字以内" class="form-control infor-form-control fl" maxlength="200" rows="5" cols="40"></textarea>
+                  <span class="wordwrap"><var class="word">200</var>/200</span>
+                </div>
+                <span class="col-red fs12 ml_22">应用简介不能为空且200字以内</span>
+              </li>
+              <li>
+                <label class="infor-name fl"></label>
+                <a href="###" class="base-btn btn-blue btn-large" data-toggle="modal" data-target="#myModal">保存</a>
+              </li>
+            </ul>
+          </div>
+          <!--填写信息表单 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+
+<!-- 默认logo模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">选择系统默认LOGO</h4>
+            </div>
+            <div class="modal-body">
+              <div class="developer-select-logo">
+                <ul>
+                  <li>
+                    <img src="../images/app_store/icon-app01.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/icon-app02.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/icon-app03.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/icon-app04.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/icon-app05.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/new-app01.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/new-app02.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/new-app03.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/new-app04.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                  <li>
+                    <img src="../images/app_store/new-app05.png" />
+                    <p class="developer-select-no"></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer project-build-footer t-center">
+              <button type="button" class="base-btn btn-blue btn-large">确定</button>
+              <button type="button" class="base-btn btn-grey btn-large ml_10">取消</button>
+            </div>
+          </div>
+      </div>
+    </div> 
+<!--模态框（Modal）-->
+</body>
+</html>
+<!--优化下拉菜单-->
+<script type="text/javascript">
+    window.onload = function() {
+        function DropDown(el) {
+            this.dd = el;
+            this.span = this.dd.children('span');
+            this.li = this.dd.find('ul.dropdown li');
+            this.val = '';
+        }
+        DropDown.prototype.initEvents = function() {
+            var obj = this;
+            obj.dd.on('click', function(event) {
+                $(this).toggleClass('active').siblings().removeClass('active');
+                event.stopPropagation();
+            });
+            obj.li.on('click', function() {
+                var opt = $(this);
+                obj.val = opt.html();
+                if(obj.span.html() == obj.val) return;
+                obj.span.html(obj.val);
+                $(document).click(function() {
+                    $('.test').removeClass('active');
+                });
+            })
+        }
+        var test1 = new DropDown($('#type'));
+        var test2 = new DropDown($('#terminal'));
+        test1.initEvents();
+        test2.initEvents()
+    }
+</script>
+<!--选择默认logo-->
+<script type="text/javascript">
+$(document).on('click', '.developer-select-logo ul li p', function(){
+    // if($(this).hasClass('developer-select-yes')){
+        $(this).removeClass('developer-select-yes');
+    // }else{
+        $(this).parents('li').siblings().each(function(){
+            $(this).children('p').removeClass('developer-select-yes');
+        })
+        $(this).addClass('developer-select-yes'); 
+    // }
+
+})
+</script>

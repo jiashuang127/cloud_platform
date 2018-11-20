@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/chosen.min.css">
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit edit-infor">个人中心</a></li>
+                      <li><a href="###" class="top-edit edit-password">修改密码</a></li>
+                      <li><a href="###" class="top-edit edit-quit">退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div id="container" style="min-height: 820px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="">
+                <a href="../developer/developer_index.html" class="">我开发的应用</a>
+              </li>
+              <li class="">
+                <a href="../developer/developer_app_detail.html" class="">学生智慧管理</a>
+              </li>
+              <li class="active">申请数据</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <!--填写信息表单 start-->
+          <div class="infor-form-box infor-form-box-new">
+            <ul class="infor-form-list">
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">申请内容</label>
+                <!--下拉搜索非多选 <select class="form-control infor-form-control" id="province"></select> -->
+                <select multiple="multiple" id="select-multiple" style="display: none;">
+                  <option value="1">应用1</option>
+                  <option value="2">应用2</option>
+                  <option value="3">应用3</option>
+                  <option value="4">应用4</option>
+                  <option value="5">应用5</option>
+                  <option value="6">应用6</option>
+                  <option value="7">应用7</option>
+                  <option value="8">应用8</option>
+                </select>
+              </li>
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">使用时间</label>
+                <div id="terminal" class="test">
+                  <span>选择时间</span>
+                  <ul class="dropdown">
+                      <li>一个月</li>
+                      <li>三个月</li>
+                      <li>六个月</li>
+                  </ul>
+                </div> 
+              </li>
+              <li>
+                <i class="col-red infor-form-red">*</i>
+                <label class="infor-name fl">需求说明</label>
+                <div class="wordCount fl" id="wordCount">
+                  <textarea placeholder="字数限200字以内" class="form-control infor-form-control fl" maxlength="200" rows="5" cols="40"></textarea>
+                  <span class="wordwrap"><var class="word">200</var>/200</span>
+                </div>
+                <span class="col-red fs12 ml_22">需求说明不能为空且200字以内</span>
+              </li>
+              <li>
+                <label class="infor-name fl"></label>
+                <a href="###" class="base-btn btn-blue btn-large" data-toggle="modal" data-target="#myModal">申请</a>
+              </li>
+            </ul>
+          </div>
+          <!--填写信息表单 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email">pingtaiceshi@xjgreat.com</span><span class="footer-phone">010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+<!--文本框提示文字和统计字数js-->
+<script>
+    $(function(){
+
+        //先选出 textarea 和 统计字数 dom 节点
+        var wordCount = $("#wordCount"),
+                textArea = wordCount.find("textarea"),
+                word = wordCount.find(".word");
+        //调用
+        statInputNum(textArea,word);
+
+    });
+    /*
+     * 剩余字数统计
+     * 注意 最大字数只需要在放数字的节点哪里直接写好即可 如：<var class="word">200</var>
+     */
+    function statInputNum(textArea,numItem) {
+        var max = numItem.text(),
+                curLength;
+        textArea[0].setAttribute("maxlength", max);
+        curLength = textArea.val().length;
+        numItem.text(max - curLength);
+        textArea.on('input propertychange', function () {
+            var _value = $(this).val().replace(/\n/gi,"");
+            numItem.text(max - _value.length);
+        });
+    }
+</script>
+<!--优化下拉菜单-->
+<script type="text/javascript" src="../js/select_box.js"></script>
+<!--下拉多选择js和css-->
+<link href="../css/multiple-select.css" rel="stylesheet"/>
+<script src="../js/multiple-select.js"></script>
+<script>
+    $("#select-multiple").multipleSelect({
+        filter: true
+    });
+</script>
+</body>
+</html>

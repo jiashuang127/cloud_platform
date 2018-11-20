@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新建任务</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 750px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="../developer/developer_app_detail.html">学生智慧管理</a></li>
+              <li><a href="../developer/developer_application_calculate_record.html">申请记录</a></li>
+              <li class="active">创建任务</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <!--切换标签页-->
+          <div class="pall_30">
+            <div class="pro-api-detail-box">
+              <div class="api-classify-datail-left">
+                <h3 class="task-left-title">数据集</h3>
+                <div id="api_categories" class="task-left-categories">
+                  <ul id="myTab" class="nav nav-tab-left">
+                    <li class="active">
+                      <a href="#APIname01" data-toggle="tab">学生基础信息(14/16)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname02" data-toggle="tab">学生成绩信息(3/3)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname03" data-toggle="tab">一卡通账户信息(3/3)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname04" data-toggle="tab">图书借阅信息(3/3)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname05" data-toggle="tab">学校基础数据集(2/4)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname066" data-toggle="tab">教职工管理数据集(2/36)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname07" data-toggle="tab">图书馆数据集(4/5)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname08" data-toggle="tab">一卡通数据集(3/4)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname09" data-toggle="tab">教学管理数据集(0/23)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname10" data-toggle="tab">科研管理数据集(0/15)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname11" data-toggle="tab">财务管理数据集(0/9)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname12" data-toggle="tab">资产管理数据集(0/7)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname13" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname14" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname15" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname16" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname17" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname18" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname19" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname20" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname21" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname22" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                    <li>
+                      <a href="#APIname23" data-toggle="tab">办公管理数据集(0/6)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="myTabContent" class="pro-api-tab-content tab-content">
+                <div class="tab-pane fade in active" id="APIname01">
+                  <div class="doc-tab-box doc-tab-box02 ml_15">
+                    <ul>
+                      <li class="active"><a href="#DataPreview" data-toggle="tab">数据预览</a></li>
+                      <li><a href="#FieldDescription" data-toggle="tab">字段说明</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <!-- 数据预览 -->
+                      <div class="tab-pane active" id="DataPreview">
+                        <div class="all-app-review-list api-application-list task-new-list" id="task-result-table">
+                          <table style="width: 200%">
+                            <thead>
+                              <tr>
+                                <th width="5"></th>
+                                <th>sno</th>
+                                <th>snoname</th>
+                                <th>age</th>
+                                <th width="5"></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td>1234</td>
+                                <td>yangxi</td>
+                                <td>33</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>5678</td>
+                                <td>jihuixin</td>
+                                <td>24</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>1234</td>
+                                <td>yangxi</td>
+                                <td>33</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>5678</td>
+                                <td>jihuixin</td>
+                                <td>24</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>5678</td>
+                                <td>jihuixin</td>
+                                <td>24</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>5678</td>
+                                <td>jihuixin</td>
+                                <td>24</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>5678</td>
+                                <td>jihuixin</td>
+                                <td>24</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>5678</td>
+                                <td>jihuixin</td>
+                                <td>24</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- 字段说明 -->
+                      <div class="doc-tab-list tab-pane" id="FieldDescription">
+                        <div class="all-app-review-list api-application-list task-new-list" id="task-result-table-new">
+                          <table style="width: 200%">
+                            <thead>
+                              <tr>
+                                <th width="5"></th>
+                                <th>字段名</th>
+                                <th>字段类型</th>
+                                <th>类型</th>
+                                <th width="5"></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td>sno</td>
+                                <td>string</td>
+                                <td>学号</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>sname</td>
+                                <td>string</td>
+                                <td>学生姓名</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>sname</td>
+                                <td>string</td>
+                                <td>学生姓名</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>sname</td>
+                                <td>string</td>
+                                <td>学生姓名</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="APIname02">
+                  第二个
+                </div>
+              </div>
+            </div>  
+            <div class="task-left-title task-sql-box">SQL任务
+              <div class="fr">
+                <ul class="infor-form-list">
+                  <li>
+                    <i class="col-red infor-form-red">*</i>
+                    <label class="infor-name fl">任务名称</label>
+                    <input type="text" class="param_key form-control infor-form-control w_180" placeholder="任务名称">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 关联任务 -->
+            <div class="related-tasks">
+              <textarea placeholder="SQL语句" class="related-task-textarea"></textarea>
+              <div class="tasks-tips-box">
+                <div class="tasks-tips-left">
+                <p class="task-tips fs12">1.数据存储所在表名为data，例如：select host from data</p>
+                <p class="task-tips fs12">2.输入SQL语句时请区分字段大小写;</p>
+                </div>
+                <a href="javascript:void(0);" class="base-btn-small btn-green btn-middle fr mt_5">验证SQL</a>
+              </div>
+            </div>
+            <div class="mt_15">
+              <a href="javascript:void(0);" class="base-btn btn-blue btn-large mt_15 mr_10">保存</a>
+              <a href="javascript:void(0);" class="base-btn btn-boder btn-large mt_15">取消</a>
+            </div>
+            <!-- 关联任务end -->
+          </div>
+          <!--切换标签页end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+<!--滚动条JS-->
+<link href="../css/perfect-scrollbar.css" rel="stylesheet">
+<script src="../js/perfect-scrollbar.js"></script>
+<script>
+  $(function() {
+        var ps = new PerfectScrollbar('#api_categories');
+         var ps = new PerfectScrollbar('#task-result-table');
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+            var ps = new PerfectScrollbar('#task-result-table-new');
+        })
+    });
+</script>
+</body>
+</html>

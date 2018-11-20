@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>应用商店</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+    <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!--旋转木马-->
+    <link rel="stylesheet" href="../css/rotate.css">
+    <script src="../js/rotate.js"></script>
+</head>
+
+<body>
+  <div class="wrapper wrapper-body">
+    <!--头部导航 开始-->
+    <div class="wrapper-main">
+      <div class="platform-head">
+        <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+        <div class="fr">
+            <div id="top-user-menu">
+                <div class="top-user-menu-list">
+                    <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+                </div>
+                <div class="header-right dropdown">
+                    <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <img src="../images/developer/icon-man.png" class="user-img">
+                        <span class="username">platform_admin@campus.com</span>
+                        <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-n">
+                        <li><a href="###" class="top-edit edit-infor">基本资料</a></li>
+                        <li><a href="###" class="top-edit edit-password">修改密码</a></li>
+                        <li><a href="###" class="top-edit edit-quit">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fr">
+            <ul class="head-top-menu">
+                <li><a href="###" class="active">应用中心</a></li>
+                <li><a href="###">开发者中心</a></li>
+                <li><a href="###">API集市</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="app-store-new-content">
+      <!--下拉菜单和搜索-->
+      <div class="app-store-menu-content">
+          <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle btn-menu-dropdown" data-toggle="dropdown">
+                  全部 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu store-dropdown-menu" role="menu">
+                  <li><a href="#">未分类</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">图书馆分类</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">学生管理</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">外部舆情</a></li>
+              </ul>
+          </div>
+          <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle btn-menu-dropdown" data-toggle="dropdown">A-Z
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu store-dropdown-menu letter-dropdown-menu" role="menu">
+                  <li><a href="#">A</a></li>
+                  <li><a href="#">B</a></li>
+                  <li><a href="#">C</a></li>
+                  <li><a href="#">D</a></li>
+                  <li><a href="#">E</a></li>
+                  <li><a href="#">F</a></li>
+                  <li><a href="#">G</a></li>
+                  <li><a href="#">H</a></li>
+                  <li><a href="#">I</a></li>
+                  <li><a href="#">J</a></li>
+                  <li><a href="#">K</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">N</a></li>
+                  <li><a href="#">O</a></li>
+                  <li><a href="#">P</a></li>
+                  <li><a href="#">Q</a></li>
+                  <li><a href="#">R</a></li>
+                  <li><a href="#">S</a></li>
+                  <li><a href="#">T</a></li>
+                  <li><a href="#">U</a></li>
+                  <li><a href="#">V</a></li>
+                  <li><a href="#">W</a></li>
+                  <li><a href="#">X</a></li>
+                  <li><a href="#">Y</a></li>
+                  <li><a href="#">Z</a></li>
+              </ul>
+          </div>
+          <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle btn-menu-dropdown store-new-search" data-toggle="dropdown"><img src="../images/app_store/icon-search-new.png" />
+              </button>
+              <div class="dropdown-menu store-dropdown-menu" role="menu">
+                  <div class="store-new-search-input">
+                      <input id="searchText" type="text" placeholder="应用名称"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div style="width: 100%; height: 140px;"></div>
+      <!--下拉菜单和搜索 end-->
+      <!--应用旋转木马-->
+      <section class="htmleaf-container">
+        <div class="carousel-box">
+          <div id="single" class="carousel slide" data-ride="carousel" data-shift="1">
+            <div class="carousel-inner">
+                <ul class="row item active">
+                    <li class="col-xs-4 one">
+                      <div class="app-classify">
+                        <h3 class="app-classify-title"><span>外部舆情</span></h3>
+                        <ul class="app-classify-infor-list" id="appstore-left-scrollbar">
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app02.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app03.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app02.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app03.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="col-xs-4 two">
+                      <div class="app-classify">
+                        <h3 class="app-classify-title"><span>综合舆情</span></h3>
+                        <ul class="app-classify-infor-list">
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app04.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app05.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="col-xs-4 three">
+                      <div class="app-classify">
+                        <h3 class="app-classify-title"><span>学生管理</span></h3>
+                        <ul class="app-classify-infor-list">
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app02.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app03.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="row item">
+                    <li class="col-xs-4 two">
+                      <div class="app-classify">
+                        <h3 class="app-classify-title"><span>综合舆情</span></h3>
+                        <ul class="app-classify-infor-list">
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app04.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app05.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="col-xs-4 three">
+                      <div class="app-classify">
+                        <h3 class="app-classify-title"><span>学生管理</span></h3>
+                        <ul class="app-classify-infor-list">
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app02.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app03.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="col-xs-4 four">
+                      <div class="app-classify">
+                        <h3 class="app-classify-title"><span>未分类</span></h3>
+                        <ul class="app-classify-infor-list">
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app04.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用一测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app05.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用二测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="fl"><img src="../images/app_store/new-app01.png" width="74" height="74" /></div>
+                            <div class="new-app-infor">
+                              <p>测试应用三测试应用一</p>
+                              <a href="###">应用详情</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="carousel-control left" href="#single" data-slide="prev">Previous</a>
+            <a class="carousel-control right" href="#single" data-slide="next">Next</a>
+          </div>
+        </div>
+      </section>
+      <!--应用旋转木马 end-->
+    </div>    
+    <!--中间部分 end-->  
+    </div>      
+    <!--底部-->
+    <div class="platform-footer">
+      <div class="footer-copy">
+        <p>
+          <a href="###">操作手册</a><span class="pr_20">|</span>
+          <a href="###">API订阅协议</a><span class="pr_20">|</span>
+          <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+          <span class="footer-email">pingtaiceshi@xjgreat.com</span><span class="footer-phone">010-64421361</span>
+        </p>
+        <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+        <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+      </div>
+    </div>
+    <!--底部end-->
+  </div>
+  <!--模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">给管理员留言</h4>
+        </div>
+        <div class="modal-body leave-messages-body">
+          <textarea class="leave-messages" rows="3" placeholder="请输入留言"></textarea>
+        </div>
+        <div class="modal-footer leave-messages-footer">
+          <button type="submit" class="base-btn btn-large btn-blue">确定</button>
+        </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+</body>
+</html>
+<!--旋转木马js-->
+<script type="text/javascript">
+  $(function(){
+
+    //不自动循环轮播
+    $('.carousel').carousel({
+      interval:false
+    })
+  })
+</script>
+<!--滚动条-->
+<link href="../css/perfect-scrollbar.css" rel="stylesheet">
+<script src="../js/perfect-scrollbar.js"></script>
+<script>
+  var $ = document.querySelector.bind(document);
+  var ps = new PerfectScrollbar('#appstore-left-scrollbar');
+</script>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <!--焦点js-->
+  <script type="text/javascript" src="../js/lrtk.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="../my/my_message.html" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li class="toggle-role-text">切换至...</li>
+                      <li><a href="###" class="top-edit top-edit-border"><i class="iconfont icon-iconfonticon5 mr_10"></i>用户角色</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="../developer/developer_index.html" class="active">开发者中心</a></li>
+              <li><a href="###">数据集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="../developer/developer_index.html"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="../my/my_message.html"><i class="iconfont icon-xiaoxioff iconfont-sidebar"></i>消息中心</a>
+            </li>
+            <li class="item">
+              <a href="../doc/doc_index03.html"><i class="iconfont icon-wendangzhongxin iconfont-sidebar"></i>文档中心</a>
+            </li>
+            <li class="item">
+              <a href="../my/my_infor.html"><i class="iconfont icon-jibenziliao iconfont-sidebar"></i>基本资料</a>
+            </li>
+            <li class="item">
+              <a href="../my/password.html"><i class="iconfont icon-icon_xiugaimima iconfont-sidebar"></i>修改密码</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="title">我开发的应用</li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索和创建 start-->
+            <div class="devloper-top-box fr">
+              <a href="../developer/developer_build_new_app.html" class="base-btn btn-blue fr">创建新应用</a>
+              <a href="../developer/download_template.html" class="base-btn btn-blue fr mr_10">模板下载</a>
+              <a href="../developer/developer_audit_record.html" class="base-btn btn-white fr mr_10 ml_20">审核记录</a>
+              <div class="developer-search-new fr">
+                <input type="text" placeholder="应用名称">
+                <button type="button"><i class="iconfont icon-sousuo"></i></button>
+              </div>
+            </div>
+            <!--搜索和创建 end-->
+          </div>
+          <div class="developer-app-review">
+            <ul class="app-detail-nav">
+              <li>
+                <a href="###" class="cur">全部</a>
+              </li>
+              <li>
+                <a href="###">已上架</a>
+              </li>
+              <li>
+                <a href="###">未上架</a>
+              </li>
+              <li>
+                <a href="###">已下架</a>
+              </li>
+              <a href="###" class="fr operation-guide" data-toggle="modal" data-target="#myModal"><i class="iconfont icon-shouzhi"></i>开发者操作指南</a>
+            </ul>
+            <div class="all-app-review-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th width="30"></th>
+                    <th>应用名称</th>
+                    <th>应用状态</th>
+                    <th>运行情况</th>
+                    <th>最近访问时间<a href="###"><i class="iconfont icon-xialajiantou"></i></a></th>
+                    <th>应用创建时间<a href="###"><i class="iconfont icon-arrow-up"></i></a></th>
+                    <th width="225" class="c_5295f2">操作</th>
+                    <th width="30"></th>
+                  </tr>
+                </thead>
+                <tbody>    
+                  <tr>
+                    <td></td>
+                    <td>网络分析</td>
+                    <td>已上架</td>
+                    <td>运行中</td>
+                    <td>2017-04-17</td>
+                    <td>2017-04-03</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue"><i class="iconfont icon-chakan iconfont-btn"></i>预览</a>
+                      <a href="../developer/developer_app_detail.html" class="table-iconfonts-btn iconfonts-btn-green"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                      <a href="###"  class="table-iconfonts-btn iconfonts-btn-red"><i class="iconfont icon-shanchu iconfont-btn"></i>删除</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>校园电子资源访问大数据分析系统</td>
+                    <td>已上架</td>
+                    <td>运行中</td>
+                    <td>2017-04-18</td>
+                    <td>2017-04-22</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue"><i class="iconfont icon-chakan iconfont-btn"></i>预览</a>
+                      <a href="../developer/developer_app_detail.html" class="table-iconfonts-btn iconfonts-btn-grey disableCss"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                      <a href="###"  class="table-iconfonts-btn iconfonts-btn-grey disableCss"><i class="iconfont icon-shanchu iconfont-btn"></i>删除</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>XJ-Immortal日志工具</td>
+                    <td>已下架</td>
+                    <td>--</td>
+                    <td>2017-04-22</td>
+                    <td>2017-04-25</td>
+                    <td>
+                      <a href="###" class="table-iconfonts-btn iconfonts-btn-blue"><i class="iconfont icon-chakan iconfont-btn"></i>预览</a>
+                      <a href="../developer/developer_app_detail.html" class="table-iconfonts-btn iconfonts-btn-green"><i class="iconfont icon-eye iconfont-btn"></i>查看</a>
+                      <a href="###"  class="table-iconfonts-btn iconfonts-btn-grey disableCss"><i class="iconfont icon-shanchu iconfont-btn"></i>删除</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+<!--模态框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width:800px;">
+      <div class="modal-content">
+          <div class="modal-header modal-header-fff">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont icon-guanbi"></i></button>
+          </div>
+          <div class="modal-body">
+          	<div class="app-detail-contect-box operation-guide-img">
+	            <div class="app-detail-img focus">
+	                <ul class="rslides f426x240">
+	                    <li><img src="../images/developer/guide-img01.jpg" /></li>
+	                    <li><img src="../images/developer/guide-img02.jpg" /></li>
+	                    <li><img src="../images/developer/guide-img03.jpg" /></li>
+                      <li><img src="../images/developer/guide-img04.jpg" /></li>
+                      <li><img src="../images/developer/guide-img05.jpg" /></li>
+                      <li><img src="../images/developer/guide-img06.jpg" /></li>
+                      <li><img src="../images/developer/guide-img07.jpg" /></li>
+                      <li><img src="../images/developer/guide-img08.jpg" /></li>
+	                </ul>
+	            </div>
+	        </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+$('.disableCss').removeAttr('href');//去掉a标签中的href属性
+$('.disableCss').removeAttr('onclick');//去掉a标签中的onclick事件
+});
+function index(){
+	$('.operation-guide').css('color','#f5ae46');  //默认值
+	setTimeout(" $('.operation-guide').css('color','#f3a600')",500); //第一次闪烁
+	setTimeout( "$('.operation-guide').css('color','#fac168')",500); //第二次闪烁
+};
+window.setInterval(index, 1000); //让index 多久循环一次 
+</script>

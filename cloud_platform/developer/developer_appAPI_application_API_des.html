@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform_admin@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-iconfonticon5 mr_10"></i>个人中心</a></li>
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="###" class="active">应用中心</a></li>
+              <li><a href="###">开发者中心</a></li>
+              <li><a href="###">API集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="../doc/doc_index.html">文档中心</a></li>
+              <li><a href="../doc/doc_API_store.html">API集市</a></li>
+              <li><a href="../doc/doc_API_store_detail.html">学生基础信息</a></li>
+              <li class="active">学生基础信息模糊查询</li>
+            </ol>
+            <!--面包线 end-->
+            <a href="javascript:void(0)" class="base-btn btn-blue fr">JSON返回示例</a>
+            <a href="javascript:void(0)" class="base-btn btn-blue fr mr_10" data-toggle="modal" data-target="#myUrlModal">请求示例</a>
+          </div>
+          <!--文档中心-->
+          <div class="developer-app-review">
+            <ul class="app-detail-nav">
+              <li class="active"><a href="#firstDes" data-toggle="tab" aria-expanded="false">接口调用请求说明</a></li>
+              <li><a href="#twoDes" data-toggle="tab">参数说明</a></li>
+              <li><a href="#threeDes" data-toggle="tab">返回说明</a></li>
+            </ul>
+            <div class="tab-content tab-content-p">
+              <div class="doc-tab-list tab-pane active" id="firstDes">
+                <div class="pall_30">
+                  <table class="list-line-table list-line-left-table ">
+                    <tbody>
+                    <tr>
+                      <td width="120">API描述</td>
+                      <td>学生信息模糊查询</td>
+                    </tr>
+                    <tr>
+                      <td width="120">接口地址</td>
+                      <td>/open_api/student/infos/search</td>
+                    </tr>
+                    <tr>
+                      <td width="120">请求方法</td>
+                      <td>get</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="doc-tab-list tab-pane" id="twoDes">
+                <div class="all-app-review-list">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th width="30"></th>
+                        <th>参数名称</th>
+                        <th>是否必填</th>
+                        <th>默认值</th>
+                        <th>描述</th>
+                        <th>代码表</th>
+                        <th width="30"></th>
+                      </tr>
+                    </thead>
+                    <tbody>    
+                      <tr>
+                        <td></td>
+                        <td>access_token</td>
+                        <td>是</td>
+                        <td>10</td>
+                        <td>API调用凭证</td>
+                        <td>
+                          <a href="###" data-toggle="modal" data-target="#TableModal">test_student</a>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>access_token</td>
+                        <td>是</td>
+                        <td>10</td>
+                        <td>API调用凭证</td>
+                        <td>
+                          <a href="###" data-toggle="modal" data-target="#TableModal">test_student</a>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>access_token</td>
+                        <td>是</td>
+                        <td>10</td>
+                        <td>API调用凭证</td>
+                        <td>
+                          <a href="###" data-toggle="modal" data-target="#TableModal">test_student</a>
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="doc-tab-list tab-pane" id="threeDes">
+                <div class="all-app-review-list">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th width="30"></th>
+                        <th>参数名称</th>
+                        <th>类型</th>
+                        <th>描述</th>
+                        <th width="30"></th>
+                      </tr>
+                    </thead>
+                    <tbody>    
+                      <tr>
+                        <td></td>
+                        <td>account_address_codes</td>
+                        <td>string</td>
+                        <td>户口所在地代码</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--文档中心 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+
+<!--示例模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">请求示例</h4>
+          </div>
+          <div class="modal-body">
+            <div class="d-api-add-data-pre">
+              <span class="d-api-add-data-pre-pun">{:code=>1000, :message=>"ok", :description=>"api请求成功", :result=>{:account_address_code=>"76", :account_detail_address=>"gfm", :account_nature_code=>"71", :account_nature_name=>"lgs", :account_postcode=>"38", :admission_date=>"dgb", :admission_grade=>"etz", :admission_score=>"qks", :admission_season_name=>"dyu", :admission_type_name=>"dom", :admit_type_name=>"lre", :bachelor_code=>"36", :bachelor_status_code=>"61", :bachelor_status_name=>"qnp", :bank_account=>"bfy", :birth_administrative_name=>"hym", :birth_date=>"ojd", :birth_place=>"bid", :birth_place_shortname=>"ens", :blood_type=>"cdt", :campus_coded=>"33", :campus_code_is=>"71", :campus_edu_background_code=>"28", :campus_edu_background_name=>"sil", :campus_name=>"yeg", :campus_name_is=>"pkr", :candidate_num=>"afe", :career_office=>"mrq", :category_code=>"2", :category_name=>"jdh", :check_status=>"hoj", :class_name=>"lus", :class_no=>"963", :complex_eaxm_num=>"yse", :complex_eaxm_result=>"zpv", :complex_eaxm_year=>"dnl", :comprehensive_eval=>"fva", :confirm_status=>"que", :contact_address=>"uxr", :cultivation_level=>"yta", :cultivation_level_name=>"exk", :cultivation_levlel_code=>"36", :cultivation_mode=>"vol", :cultivation_type_code=>"69", :cultivation_type_name=>"cip", :cultivat_mode_code=>"24", :current_age=>"dhs", :current_grade=>"ltz", :current_major_code=>"61", :current_registration_place=>"wnd", :data_source_from=>"yzw", :department_code=>"63", :department_name=>"euo", :department_shortname=>"zuc", :difficult_code=>"47", :difficult_name=>"uco", :directional_unit_address_code=>"84", :dormitory=>"dvh", :edu_background_code=>"16", :edu_background_name=>"qoa", :email=>"jua", :english_exam_pass_num=>"xbs", :english_exam_result=>"ofk", :english_name=>"zqo", :entrance_exam_result_num=>"hpv", :especial_region_code=>"1", :ever_name=>"sun", :exam_foreign_langu_code=>"85", :exam_type_code=>"13", :expect_graduation_year=>"ezm", :family_background=>"cae", :family_income_amount=>"kdt", :family_income_from=>"tdi", :family_police_station=>"fag", :feature_hobby=>"utr", :first_instructor=>"vjm", :free_push_unit=>"azx", :gender=>"enl", :gender_code=>"36", :grade=>"sde", :graduation_time=>"bvq", :health_code=>"85", :highschool_graduated_date=>"yst", :homepage_address=>"rmi", :home_address=>"lov", :home_phone=>"tnu", :home_postcode=>"54", :identify_num=>"cvs", :identify_type=>"tjm", :identify_type_name=>"pbk", :innovation_platform=>"619", :instructor_code=>"79", :is_abroad_name=>"dfj", :is_at_school_code=>"86", :is_at_school_name=>"gsh", :is_campus_direction=>"xgf", :is_difficult=>"dzu", :is_educational_code=>"91", :is_educational_name=>"met", :is_graduated_code=>"21", :is_graduated_name=>"jlq", :is_important=>"noq", :is_interdisciplinary=>"mzt", :is_loan=>"nmu", :is_normal_student=>"338", :is_paul_back=>"vmj", :is_registed=>"dko", :is_talented_project=>"lkv", :join_group_time=>"has", :join_party_time=>"cft", :last_bachelor_code=>"19", :last_bachelor_department_code=>"66", :last_bachelor_department_name=>"yko", :last_bachelor_major_code=>"5", :last_bachelor_major_name=>"ukf", :last_bachelor_time=>"ayo", :last_edu_backgroud_study_type=>"ctb", :last_graduated_campus_code=>"34", :last_graduated_campus_name=>"dhc", :last_graduated_major_code=>"18", :last_graduated_major_name=>"dnx", :major_code=>"54", :major_name=>"ybk", :major_work_year=>"mxz", :manage_department_code=>"18", :manage_department_name=>"sku", :marital_status=>"hrs", :marital_status_code=>"11", :medical_history=>"kxi", :minor_major=>"551", :minor_major_name=>"611", :msn_code=>"5", :name_spelling=>"vmu", :nationality=>"cni", :nation_code=>"7", :nation_name=>"eka", :native_city=>"mkh", :native_place=>"glp", :native_province=>"jgo", :normal_student_code=>"306", :normal_student_name=>"840", :original_depart_address=>"grx", :original_depart_spell=>"efi", :origin_place=>"qjd", :origin_place_code=>"56", :origin_place_shortname=>"bze", :phone=>"vsw", :political_code=>"31", :political_name=>"zef", :qq_num=>"rux", :record_insert_date=>"ntw", :record_update_date=>"tan", :recruit_students_type=>"kxn", :region_code=>"37", :region_name=>"zve", :register_status=>"six", :register_status_name=>"lhb", :remark=>"kat", :research_direction=>"uea", :reserved_addmission_year=>"dhj", :room_number=>"twp", :schooling_period=>"geo", :school_roll=>"goa", :school_state=>"hjf", :school_state_code=>"35", :shared_person_code=>"83", :shared_person_name=>"sru", :sign_up_num=>"pea", :sname=>"nvm", :sno=>"821", :special_program=>"bdk", :special_stu_type=>"xrh", :student_head_pic=>"hnv", :student_politics_name=>"pnx", :student_politics_status=>"wun", :stu_category_code=>"25", :stu_category_name=>"oir", :stu_nature_code=>"89", :stu_nature_name=>"hta", :stu_no=>"133", :stu_type=>"sap", :stu_type_code=>"50", :stu_type_name=>"vrw", :undergraduated_bachelor=>"kwu", :undergraduated_bachelor_code=>"48", :undergraduated_bachelor_time=>"mtb", :undergraduated_campus_code=>"2", :undergraduated_campus_name=>"cgm", :undergraduated_diploma_code=>"18", :undergraduated_major_code=>"76", :undergraduated_major_name=>"lij", :undergraduated_study_type=>"tyi", :undergraduated_time=>"dms", :unit_code=>"49", :unit_name=>"wcj", :un_bachelor_campus_code=>"27", :un_bachelor_campus_name=>"nwc", :un_bachelor_major_code=>"13", :un_bachelor_major_name=>"hlj", :update_date=>"mbl", :weixin_id=>"ncd", :y_stu_type_name=>"sqt"}}</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+<!--表模态框 -->
+<div class="modal fade" id="TableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width: 800px;">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">代码表（表名）</h4>
+          </div>
+          <div class="modal-body">
+            <div class="auth-content-table nowrap-table code-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>参数名</th>
+                    <th>别名</th>
+                    <th>类型</th>
+                    <th>描述</th>
+                    <th>参数名</th>
+                    <th>别名</th>
+                    <th>类型</th>
+                    <th>描述</th>
+                    <th>参数名</th>
+                    <th>别名</th>
+                    <th>类型</th>
+                    <th>描述</th>
+                    <th>参数名</th>
+                    <th>别名</th>
+                    <th>类型</th>
+                    <th>描述</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>                
+                  <tr>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>                
+                  <tr>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>                
+                  <tr>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>id</td>
+                    <td>ID</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>                
+                  <tr>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                    <td>is_success</td>
+                    <td>是否成功</td>
+                    <td>int(11)</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                    <td>execute_params</td>
+                    <td>执行参数</td>
+                    <td>varchar(45)</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--模态框 end -->
+</body>
+</html>

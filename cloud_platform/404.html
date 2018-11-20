@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者中心</title>
+  <link rel="shortcut icon" href="images/xijia.ico">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./css/cloud_base.css">
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="./images/logo.png"></div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="./images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="toggle active">
+              <a href="###"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-kaohejilu iconfont-sidebar"></i>审核记录</a>
+            </li>
+            <li class="item">
+              <a href="###" class=""><i class="iconfont icon-xiazai1 iconfont-sidebar"></i>模板下载</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container" style="min-height: 620px;">
+        <div class="content-body-new">
+          <div class="content-top top-boder-color">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li><a href="./developer/developer_index.html">我开发的应用</a></li>
+              <li><a href="./developer/developer_app_detail.html">学生智慧管理</a></li>
+              <li class="active">维护管理</li>
+            </ol>
+            <!--面包线 end-->
+            <!--搜索和创建 start-->
+            <div class="devloper-top-box fr">
+              <a href="###" class="base-btn btn-blue fr" data-toggle="modal" data-target="#loading_modal">新增维护</a>
+            </div>
+            <!--搜索和创建 end-->
+          </div>
+          <div class="developer-app-review">
+            <div class="filter-conditions-box">
+              <div class="infor-datetime form-datetime-new infor-datetime-lh fl">
+                <i class="iconfont icon-icon-calendar"></i>
+                <input type="text" id="starttime" class="datetime" value="2018-08-12">
+              </div>
+              <span class="to-word fl">-</span>
+              <div class="infor-datetime form-datetime-new infor-datetime-lh fl">
+                <i class="iconfont icon-icon-calendar"></i>
+                <input type="text" id="endtime" class="datetime" value="2018-08-22">
+              </div>
+              <button type="submit" class="base-btn btn-blue btn-search ml_10"><i class="iconfont icon-sousuo"></i>搜索</button>
+            </div>
+            <div class="all-app-review-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th width="30"></th>
+                    <th>维护起始时间</th>
+                    <th>维护终止时间</th>
+                    <th>状态</th>
+                    <th width="170">操作</th>
+                    <th width="30"></th>
+                  </tr>
+                </thead>
+              </table>
+              <div align="center" class="no-data">
+                <img src="./images/tips/no-data.jpg"/>
+                <p class="t-center c_b4b4b4 mt_10">对不起，暂时没有数据</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文档中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_developer.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper wrapper-body">
+  <div class="wrapper-main">
+    <!--头部导航 开始-->
+    <div class="platform-head">
+      <div class="fl platform-head-logo"><img src="../images/logo.png"></div>
+      <div class="fr">
+          <div id="top-user-menu">
+              <div class="top-user-menu-list">
+                  <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+              </div>
+              <div class="header-right dropdown">
+                  <a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/developer/icon-man.png" class="user-img">
+                      <span class="username">platform@campus.com</span>
+                      <span class="arrow-wrapper"><img src="../images/app_store/icon-down.png" class="arrow-img"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-n">
+                      <li class="toggle-role-text">切换至...</li>
+                      <li><a href="###" class="top-edit top-edit-border"><i class="iconfont icon-iconfonticon5 mr_10"></i>用户角色</a></li>
+                      <!-- <li><a href="###" class="top-edit"><i class="iconfont icon-icon_xiugaimima mr_10"></i>修改密码</a></li> -->
+                      <li><a href="###" class="top-edit"><i class="iconfont icon-tuichu mr_10"></i>退出登录</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fr">
+          <ul class="head-top-menu">
+              <li><a href="../developer/developer_index.html" class="active">开发者中心</a></li>
+              <li><a href="../doc/doc_API_store.html">数据集市</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--头部导航 end-->
+    <!--中间部分 start-->
+    <div class="developer-content">
+      <!--左边列表 start-->
+      <div id="sidebar" class="sidebar-item-style">
+        <div class="developer-home">
+          <div class="main-nav-user-info">
+            <div class="main-nav-user">
+              <img src="../images/developer/icon-man.png" alt="" width="86" height="86">
+              <p><span>sunmiao@xjgreat.com</span></p>
+            </div>
+          </div>
+          <ul class="main-nav-list">
+            <li class="item">
+              <a href="../developer/developer_index.html"><i class="iconfont icon-guanlishebei iconfont-sidebar"></i>应用管理</a>
+            </li>
+            <li class="item">
+              <a href="../my/my_message.html"><i class="iconfont icon-xiaoxioff iconfont-sidebar"></i>消息中心</a>
+            </li>
+            <li class="toggle active">
+               <a href="../doc/doc_index03.html"><i class="iconfont icon-wendangzhongxin iconfont-sidebar"></i>文档中心</a>
+            </li>
+            <li class="item">
+              <a href="../my/my_infor.html"><i class="iconfont icon-jibenziliao iconfont-sidebar"></i>基本资料</a>
+            </li>
+            <li class="item">
+              <a href="../my/password.html"><i class="iconfont icon-icon_xiugaimima iconfont-sidebar"></i>修改密码</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--左边列表 end-->
+      <!--右边内容 start-->
+      <div class="cloud-container">
+        <div class="content-body-new">
+          <div class="content-top">
+            <!--面包线 start-->
+            <ol class="breadcrumb developer-breadcrumb">
+              <li class="title">文档中心</li>
+            </ol>
+            <!--面包线 end-->
+          </div>
+          <!--文档中心-->
+          <div class="developer-app-review">
+            <ul class="app-detail-nav">
+              <li class=""><a href="#authorization" data-toggle="tab" aria-expanded="false">授权方式</a></li>
+              <li><a href="#setting" data-toggle="tab">调用频率设置</a></li>
+              <li><a href="#code" data-toggle="tab">错误码</a></li>
+              <li class="active"><a href="#api_example" data-toggle="tab" aria-expanded="true">调用示例</a></li>
+              <!--<li><a href="#template" data-toggle="tab">通知模板</a></li>-->
+            </ul>
+            <div class="tab-content tab-content-p">
+              <div class="doc-tab-list tab-pane active" id="api_example">
+                <ul class="example-label">
+                  <li class="active"><a href="#ruby" data-toggle="tab">Ruby调用示例</a></li>
+                  <li><a href="#java" data-toggle="tab">JAVA调用示例</a></li>
+                  <li><a href="#c" data-toggle="tab" aria-expanded="true">C#调用示例</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="doc-tab-list tab-pane active" id="ruby">
+                    <div class="code-ctr">
+    <span>#首先需要获取token，是根据key和secret生成的</span>
+    <span class="function">token_url</span> = "<span class="string">http://127.0.0.1:3033/open_api/authentication/get_access_token</span>"
+    <span class="function">token_params</span>[<span class="string">:key</span>] = '<span>123456</span>'
+    <span class="function">token_params</span>[<span class="string">:secret</span>] = '<span>abcdef</span>'
+    <span class="function">token_body</span> = RestClient.post(token_url, token_params.to_json, <span class="string">:content_type</span> => <span class="string">:json</span>)
+    <span class="function">res_hash</span> = JSON.parse(token_body)
+    if res_hash[<span class="string">:message</span>] != 'ok' <span>#如果请求结果不是ok</span>
+    <span>&nbsp;&nbsp;# error 处理</span>
+    <span>else</span>
+    <span class="function">&nbsp;&nbsp;access_token</span> = res_hash['result']['access_token']
+    <span>end</span>
+
+    <span>#以学生基础信息列表查询API为例</span>
+    <span class="function">request_url</span> = "<span class="string">http://127.0.0.1:3033/open_api/student/infos/list</span>"
+    request_params[<span class="string">:access_token</span>] = access_token
+    body = RestClient.post(request_url, request_params.to_json, <span class="string">:content_type</span> => <span class="string">:json</span>)
+    body = JSON.parse(body)
+                    </div>
+                  </div>
+                  <div class="doc-tab-list tab-pane" id="java">
+                    <div class="code-ctr">
+    <span class="comment">public</span> static void postMain(String[] args) { 
+      try { 
+        URL targetUrl = new URL("<span class="string">http://127.0.0.1:3033/open_api/authentication/get_access_token</span>"); 
+        HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection(); 
+        httpConnection.setDoOutput(true); 
+        httpConnection.setRequestMethod("POST"); 
+        httpConnection.setRequestProperty("Content-Type", "application/json"); 
+
+        String input = "{\"key\":111,\"secret\":\"222\"}"; 
+
+        OutputStream outputStream = httpConnection.getOutputStream(); 
+        outputStream.write(input.getBytes()); 
+        outputStream.flush(); 
+
+        <span class="comment">if</span> (httpConnection.getResponseCode() != 200) { 
+          throw new RuntimeException("<span class="string">Failed : HTTP error code :</span> " + 
+            httpConnection.getResponseCode()); 
+        } 
+
+        BufferedReader responseBuffer = new BufferedReader(new InputStreamReader( 
+          (httpConnection.getInputStream()))); 
+        String output; 
+        System.out.println("<span class="string">Output from Server:\n</span>"); 
+        <span class="comment">while</span> ((output = responseBuffer.readLine()) != null) { 
+          System.out.println(output); 
+        } 
+
+        httpConnection.disconnect(); 
+
+      } catch (MalformedURLException e) { 
+        e.printStackTrace(); 
+      } catch (IOException e) { 
+        e.printStackTrace(); 
+      }
+
+    }
+                    </div>
+                  </div>
+                  <div class="doc-tab-list tab-pane" id="c">
+                    <div class="code-ctr">
+    <span class="comment">public</span> void requestApiForPostMethod() {
+      string apiAddress = "<span class="string">http://127.0.0.1:3033/open_api/authentication/get_access_token</span>";
+      <span class="comment">HttpWebRequest</span> request = (HttpWebRequest) WebRequest.Create(apiAddress);
+
+      request.<span class="comment">Method</span> = "<span class="string">POST</span>";
+      request.<span class="comment">ContentType</span> = "<span class="string">application/json</span>";
+
+      //创建要发送的数据
+      string key = "111"
+      string secret = "222"
+      <span class="comment">StringBuilder</span> data = new <span class="comment">StringBuilder</span>();
+      data.<span class="comment">Append</span>("key=" + HttpUtility.UrlEncode(key));
+      data.<span class="comment">Append</span>("secret=" + HttpUtility.UrlEncode(secret));
+
+      //创建要发送的数据的字节数组
+      byte[] byteData = UTF8Encoding.UTF8.GetBytes(data.ToString());
+      //设置请求头的长度
+      request.<span class="comment">ContentLength</span> = byteData.Length;
+      //将数据写入流
+      using(<span class="comment">Stream</span> postStream = request.<span class="comment">GetRequestStream</span>()) {
+        postStream.<span class="comment">Write</span>(byteData, 0, byteData.Length);
+      }
+
+      //获取响应
+      using(<span class="comment">HttpWebResponse</span> response = request.GetResponse() as HttpWebResponse) {
+        // 获取响应的流信息
+        <span class="comment">StreamReader</span> reader = new <span class="comment">StreamReader</span>(response.<span class="comment">GetResponseStream</span>());
+    //输出
+    <span class="comment">Response</span>.<span class="comment">Write</span>(reader.<span class="comment">ReadToEnd</span>());
+    }
+    }
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--文档中心 end-->
+        </div>
+      </div>
+      <!--右边内容 end-->
+    </div>
+    <!--中间部分 end-->
+  </div>
+  <!--底部-->
+  <div class="platform-footer">
+    <div class="footer-copy">
+      <p>
+        <a href="###">操作手册</a><span class="pr_20">|</span>
+        <a href="###">API订阅协议</a><span class="pr_20">|</span>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myUrlModal">联系我们</a>
+        <span class="footer-email"><i class="iconfont icon-youxiang"></i>pingtaiceshi@xjgreat.com</span><span class="footer-phone"><i class="iconfont icon-msnui-caller"></i>010-64421361</span>
+      </p>
+      <p>©版权所有©2015 希嘉科技. All right reserved. 京ICP备15000829号-1 技术支持：希嘉创智<span class="ml_10">地址：北京市丰台区南四环西路总部基地七区22号楼</span></p>
+      <div class="ewm-code"><img src="../images/login/code.png" width="60" height="60" /></div>
+    </div>
+  </div>
+  <!--底部end-->
+</div>
+</body>
+</html>

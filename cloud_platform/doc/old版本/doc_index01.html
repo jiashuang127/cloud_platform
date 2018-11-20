@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文档中心</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_base.css">
+  <link rel="stylesheet" type="text/css" href="../css/cloud_store.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper bg_f5f5f5">
+<!--头部导航 开始-->
+  <div class="cloud-header">
+    <div class="head-top w_1200">
+      <div class="fl">
+        <span>嗨，欢迎来到希嘉！</span>
+      </div>
+      <div class="fr">
+        <div id="top-user-menu">
+          <ul>
+            <li class="top-user-menu-list">
+              <a href="###" title="新的通知"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="la-message laber-style">1</span></a>
+            </li>
+            <li class="top-user-menu-list">
+              <div class="dropdown">
+                <a id="user-info-anchor" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="" class="cloud-dropdown-img">
+                  <img src="../images/index/top_tx.jpg" width="25" height="25" class="avatar" alt=""><span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-list" aria-labelledby="user-info-anchor">
+                  <li><a href="###">我的应用</a></li>
+                  <li><a href="###">基本资料</a></li>
+                  <li><a href="###">修改密码</a></li>
+                  <li><a href="###">退出登录</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="head-logo ">
+    <div class="w_1200">
+      <div class="logo-left fl">
+        <img src="../images/logo.png"/>
+      </div>
+      <div class="nav-right fr">
+        <ul>
+          <li>
+            <a href="###">首页</a>
+          </li>
+          <li>
+            <a href="###">应用商店</a>
+          </li>
+          <li class="active">
+            <a href="###">开发者中心</a>
+          </li>
+          <li>
+            <a href="###">API文档</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--头部导航 end-->
+<!--中间部分 start-->
+  <div class="developer-content">
+    <!--左边列表 start-->
+    <div id="sidebar" class="sidebar-item-style">
+      <div class="developer-home">
+        <div class="main-nav-user-info">
+          <div class="main-nav-user">
+            <img src="../images/developer/icon-man.png" alt="" width="90" height="90">
+            <p><span>sunmiao@xjgreat.com</span></p>
+          </div>
+        </div>
+        <ul class="main-nav-list">
+          <li class="toggle active">
+            <a href="###" class="">API集市</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--左边列表 end-->
+    <!--右边内容 start-->
+    <div id="container" style="min-height: 820px;">
+      <div class="content-body">
+        <!--面包线 start-->
+        <ol class="breadcrumb developer-breadcrumb">
+          <li class="active">文档中心</li>
+        </ol>
+        <!--面包线 end-->
+        <!--文档中心 start-->
+        <div class="doc-tab-box">
+          <ul>
+            <li><a href="../doc/doc_index.html">授权方式</a></li>
+            <li class="active"><a href="../doc/doc_index01.html">调用频率设置</a></li>
+            <li><a href="../doc/doc_index02.html">错误码</a></li>
+            <li><a href="../doc/doc_index03.html">通知模板</a></li>
+          </ul>
+          <div class="doc-tab-list">
+            <h3>调用频率设置说明</h3>
+            <p>希嘉统一数据共享平台开放接口限制每段时间只能请求一定的次数。限制的单位时间有每小时、每天；限制的维度有单授权用户和单IP；部分特殊接口有单独的请求次数限制。例如：</p>
+            <p>• 一个应用内单授权用户每小时只能请求希嘉统一数据共享平台开放接口n次；</p>
+            <p>• 一个应用内单授权用户每天累计只能请求希嘉统一数据共享平台开放接口m次；</p>
+            <p>• 一个IP地址每小时只能请求希嘉统一数据共享平台开放接口x次；</p>
+            <p>其中n、m、x、y的具体数值，希嘉统一数据共享平台开放平台将采用应用质量评估系统，实现智能评估应用质量，质量高的应用相应的这些数值就高，也就是请求限制小。因此限制值不固定，不同的应用有不同的限制，取决于应用自身的质量。</p>
+            <p>当开发者调用接口不能满足开发需求，且授权用户数高于20万时，欢迎开发者申请合作伙伴洽谈。在保证用户隐私及信息安全的前提下，本着合作、合法、互利的原则，进行深度合作。</p>
+          </div>
+        </div>
+        <!--文档中心 end-->
+      </div>
+    </div>
+    <!--右边内容 end-->
+  </div>
+<!--中间部分 end-->
+<!--底部-->
+<footer class="developer-app-foot">
+  <div class="developer-app-foot-item w_1200">
+    <div class="fl">
+      <div class="app-foot-features-list">
+        <ul>
+          <li>
+            <a href="http://www.xjgreat.com">希嘉官网</a>
+          </li>
+          <li>
+            <a href="###">平台公告</a>
+          </li>
+          <li>
+            <a href="###">帮助中心</a>
+          </li>
+          <li>
+            <a href="###">开发指南</a>
+          </li>
+          <li class="item">
+            <a href="###">联系我们</a>
+          </li>
+        </ul>
+      </div>
+      <p class="foot-adress">地址：北京市朝阳区安贞里二区1号楼金瓯大厦210室</p>
+      <p class="foot-adress"><span>©版权所有©2015 希嘉科技. All rights reserved.京ICP备15000829号-1</span><span>技术支持：希嘉创智</span></p>
+    </div>
+    <div class="fr">
+      <div class="contact-info">
+        <p class="contact-info-phone">010-66290780</p>
+        <p class="contact-info-email">E-mail：<span>web@xjgreat.com</span></p>
+      </div>
+      <div class="contact-info-code">
+        <span class="contact-info-code-img">
+          <img src="../images/login/code.png" width="60" height="60" />
+        </span>
+        <p>扫描添加</p>
+        <p>公众号平台</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--底部end-->
+<!-- 授权字段模态框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">网站日志列表查询</h4>
+          </div>
+          <div class="modal-body">
+            <p class="mb_10">已授权字段</p>
+            <table class="list-line-table mb_10">
+              <thead>
+                <tr>
+                  <th>参数名</th>
+                  <th>别名</th>
+                  <th>类型</th>
+                  <th>描述</th>  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>request_ip</td>
+                  <td></td>
+                  <td>string</td>
+                  <td>授权名称</td>  
+                </tr>   
+                <tr>
+                  <td>referer_url</td>
+                  <td></td>
+                  <td>string</td>
+                  <td>授权地址</td>  
+                </tr>   
+                <tr>
+                  <td>request_method</td>
+                  <td></td>
+                  <td>string</td>
+                  <td></td>  
+                </tr>   
+              </tbody>
+            </table>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- 授权字段模态框 end -->
+<!-- URL模态框 -->
+<div class="modal fade" id="myUrlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">网站日志列表查询</h4>
+          </div>
+          <div class="modal-body">
+            <div class="dc-check-infor-box form-horizontal">
+		          <div class="form-group mt_15">
+		            <label class="col-sm-1 key-name url-name">URL</label>
+		            <div class="col-sm-11">
+		              <input type="text" class="form-control infor-form-control key-input" value="2017040162445508">
+		              <button type="button" class="copy-btn">复制</button>
+		            </div>
+		          </div>
+		        </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- URL模态框 end -->
+<script type="text/javascript">
+  $('.useage-trend').sparkline('html', {
+            width: 100,
+            height: 30,
+            spotColor: false,
+            minSpotColor: false,
+            maxSpotColor: false
+        });
+</script>
+
+</body>
+</html>
